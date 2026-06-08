@@ -24,6 +24,7 @@ export async function POST(request: Request) {
     // Mail potwierdzający do osoby zapisującej się
     await resend.emails.send({
       from: "Akonda Targi <targi@lp.akonda.pl>",
+      replyTo: "kontakt@akonda.pl",
       to: email,
       subject: "Potwierdzenie rejestracji – Showroom Maszyn Akonda, 25–26 czerwca",
       html: `
@@ -51,7 +52,7 @@ export async function POST(request: Request) {
             </p>
           </div>
           <div style="background: #f7f8fc; padding: 20px; text-align: center; border-top: 1px solid #e2e6ef;">
-            <p style="color: #9aa3b8; font-size: 11px; margin: 0;">Akonda Sp. z o.o. | akonda.pl | info@akonda.pl</p>
+            <p style="color: #9aa3b8; font-size: 11px; margin: 0;">Akonda Sp. z o.o. | akonda.pl | kontakt@akonda.pl</p>
           </div>
         </div>
       `,
@@ -60,7 +61,7 @@ export async function POST(request: Request) {
     // Mail powiadomienie do Akonda - nowy lead z eventu do obsłużenia
     await resend.emails.send({
       from: "Akonda Targi <targi@lp.akonda.pl>",
-      to: ["kontakt@akonda.pl", "sales@akonda.pl"],
+      to: ["kontakt@akonda.pl", "sales@akonda.pl", "dominik.papaj@key2print.com"],
       subject: `Nowy lead z eventu do obsłużenia – ${name} (${company})`,
       html: `
         <div style="font-family: Montserrat, Arial, sans-serif; max-width: 600px; margin: 0 auto;">

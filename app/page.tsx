@@ -187,7 +187,7 @@ export default function Home() {
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Data</span><p className="font-semibold text-navy">25–26 czerwca 2026 (środa – czwartek)</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Miejsce</span><p className="font-semibold text-navy">Hotel Diament Vacanza, Siemianowice Śląskie</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Wstęp</span><p className="font-semibold text-navy">Bezpłatny – wymagana rejestracja</p></div></li>
-                  <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Kontakt</span><p className="font-semibold text-navy">info@akonda.pl</p></div></li>
+                  <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Kontakt</span><p className="font-semibold text-navy">kontakt@akonda.pl</p></div></li>
                 </ul>
               </div>
             </Reveal>
@@ -233,6 +233,20 @@ export default function Home() {
               <RegistrationForm />
             </div>
           </Reveal>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-xs text-gray-400">
+            {[
+              "3000+ instalacji w Polsce",
+              "15+ lat na rynku",
+              "Bezpłatny wstęp",
+            ].map((text) => (
+              <span key={text} className="flex items-center gap-1.5">
+                <svg className="w-3.5 h-3.5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                {text}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -275,7 +289,7 @@ export default function Home() {
               <p className="opacity-40 text-xs mt-1">Innowacyjne rozwiązania dla introligatorni i&nbsp;uszlachetniania druku</p>
             </div>
             <div className="text-center md:text-right">
-              <p className="opacity-60 text-sm font-medium">info@akonda.pl</p>
+              <p className="opacity-60 text-sm font-medium">kontakt@akonda.pl</p>
               <p className="opacity-40 text-xs mt-1">akonda.pl</p>
             </div>
           </div>

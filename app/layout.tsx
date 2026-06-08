@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   title: "Akonda | Showroom Maszyn – Siemianowice Śląskie 25–26 Czerwca",
   description:
     "Zapraszamy na showroom maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 25–26 czerwca 2026.",
+  openGraph: {
+    title: "Akonda | Showroom Maszyn – Siemianowice Śląskie 25–26 Czerwca",
+    description:
+      "Zapraszamy na showroom maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 25–26 czerwca 2026.",
+    type: "website",
+    images: ["/spodek-bg.jpg"],
+  },
 };
 
 export default function RootLayout({
