@@ -165,8 +165,10 @@ export default function Home() {
       </section>
 
       {/* ── Szczegóły ── */}
-      <section className="py-16 md:py-24 bg-gray-50 border-y border-gray-200">
-        <div className="mx-auto max-w-5xl px-5">
+      <section className="relative py-16 md:py-24 border-y border-gray-200 overflow-hidden">
+        <Image src="/spodek-bg.jpg" alt="" fill className="object-cover" />
+        <div className="absolute inset-0 bg-gray-50/90" />
+        <div className="relative mx-auto max-w-5xl px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <Reveal>
               <div>
@@ -191,16 +193,16 @@ export default function Home() {
             </Reveal>
 
             <Reveal delay={2}>
-              <div className="bg-white border border-gray-200 rounded-xl p-6">
-                <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white border border-gray-200 rounded-xl p-8">
+                <div className="grid grid-cols-2 gap-6">
                   {[
                     ["ŚR", "25.06", "Prezentacje"],
                     ["CZW", "26.06", "Prezentacje"],
                   ].map(([day, date, desc], i) => (
-                    <div key={i} className="text-center p-4 rounded-lg bg-gray-50 border border-gray-200 transition-all duration-300 hover:border-navy/30 hover:shadow-sm">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">{day}</span>
-                      <p className="text-xl font-extrabold text-navy mt-1">{date}</p>
-                      <p className="text-[11px] text-gray-500 mt-1">{desc}</p>
+                    <div key={i} className="text-center p-8 rounded-xl bg-gray-50 border border-gray-200 transition-all duration-300 hover:border-navy/30 hover:shadow-sm">
+                      <span className="text-xs font-bold uppercase tracking-widest text-gray-400">{day}</span>
+                      <p className="text-3xl md:text-4xl font-extrabold text-navy mt-2">{date}</p>
+                      <p className="text-sm text-gray-500 mt-2">{desc}</p>
                     </div>
                   ))}
                 </div>
