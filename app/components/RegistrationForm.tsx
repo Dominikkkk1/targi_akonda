@@ -115,12 +115,12 @@ export default function RegistrationForm() {
             Wysyłanie...
           </span>
         ) : (
-          "Zapisz się na showroom →"
+          "Zapisz się na Dni Otwarte →"
         )}
       </button>
 
       <p className="text-[11px] text-gray-400 text-center">
-        Twoje dane są bezpieczne. Wykorzystamy je wyłącznie w&nbsp;celu organizacji showroomu.
+        Twoje dane są bezpieczne. Wykorzystamy je wyłącznie w&nbsp;celu organizacji Dni Otwartych.
       </p>
     </form>
   );

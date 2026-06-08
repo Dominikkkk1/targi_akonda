@@ -26,17 +26,17 @@ export async function POST(request: Request) {
       from: "Akonda Targi <targi@lp.akonda.pl>",
       replyTo: "kontakt@akonda.pl",
       to: email,
-      subject: "Potwierdzenie rejestracji – Showroom Maszyn Akonda, 25–26 czerwca",
+      subject: "Potwierdzenie rejestracji – Dni Otwarte Akonda, 25–26 czerwca",
       html: `
         <div style="font-family: Montserrat, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff;">
           <div style="background: #1f356a; padding: 32px; text-align: center;">
             <h1 style="color: #ffffff; font-size: 22px; margin: 0; font-weight: 800;">AKONDA</h1>
-            <p style="color: rgba(255,255,255,0.7); font-size: 12px; margin: 8px 0 0; letter-spacing: 1.5px; text-transform: uppercase;">Showroom Maszyn 2026</p>
+            <p style="color: rgba(255,255,255,0.7); font-size: 12px; margin: 8px 0 0; letter-spacing: 1.5px; text-transform: uppercase;">Dni Otwarte 2026</p>
           </div>
           <div style="padding: 32px;">
             <h2 style="color: #1f356a; font-size: 20px; margin: 0 0 16px;">Dziękujemy za rejestrację, ${name}!</h2>
             <p style="color: #5a647a; font-size: 14px; line-height: 1.6;">
-              Potwierdzamy Twój zapis na Showroom Maszyn Akonda w Siemianowicach Śląskich.
+              Potwierdzamy Twój zapis na Dni Otwarte Akonda w Siemianowicach Śląskich.
             </p>
             <div style="background: #f7f8fc; border-radius: 10px; padding: 24px; margin: 24px 0;">
               <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Data:</strong> <span style="color: #5a647a;">25–26 czerwca 2026 (środa – czwartek)</span></p>

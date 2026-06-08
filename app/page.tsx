@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <Image src="/akonda-logo.png" alt="Akonda" width={120} height={30} className="h-7 w-auto" />
             <span className="hidden sm:block text-[10px] uppercase tracking-widest text-gray-400 font-semibold border-l border-gray-200 pl-3">
-              Showroom Maszyn · 25–26.06.2026
+              Dni Otwarte · 25–26.06.2026
             </span>
           </div>
           <a href="#rejestracja" className="h-8 px-4 bg-navy text-white text-xs font-bold rounded-md inline-flex items-center hover:bg-navy-dark transition-colors">
@@ -37,14 +37,14 @@ export default function Home() {
 
               <FadeInUp delay={0.12}>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
-                  Showroom Maszyn<br />
+                  Dni Otwarte<br />
                   <span className="text-white/60">Introligatorskich</span>
                 </h1>
               </FadeInUp>
 
               <FadeInUp delay={0.24}>
                 <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8">
-                  Zapraszamy na ekskluzywny showroom maszyn introligatorskich
+                  Zapraszamy na Dni Otwarte maszyn introligatorskich
                   w&nbsp;Hotelu Diament Vacanza w&nbsp;Siemianowicach Śląskich. Zobacz na żywo
                   plotery iEcho&nbsp;PK, gilotyny, bigówki, foliarki i&nbsp;systemy broszurowania.
                 </p>
@@ -80,7 +80,7 @@ export default function Home() {
       <section className="bg-navy">
         <div className="mx-auto max-w-5xl px-5 py-7 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
           {[
-            ["2", "Dni showroomu"],
+            ["2", "Dni wydarzenia"],
             ["20+", "Maszyn na żywo"],
             ["3000+", "Instalacji w Polsce"],
             ["15+", "Lat doświadczenia"],
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2.5">
             <svg className="w-4 h-4 text-navy shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" /><path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" /></svg>
-            <span className="text-sm font-semibold text-navy">Specjalne warunki targowe</span>
+            <span className="text-sm font-semibold text-navy">Specjalne warunki eventowe</span>
           </div>
           <div className="flex items-center gap-2.5">
             <svg className="w-4 h-4 text-navy shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
@@ -121,7 +121,7 @@ export default function Home() {
           <Reveal>
             <div className="text-center mb-12">
               <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-navy bg-navy-light px-3 py-1 rounded-full mb-3">
-                W showroomie
+                Na Dniach Otwartych
               </span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-navy">
                 Co zobaczysz na żywo?
@@ -154,7 +154,7 @@ export default function Home() {
 
           <Reveal>
             <div className="mt-5 bg-navy-light border border-gray-200 rounded-xl p-6">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Również w showroomie</p>
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Również na Dniach Otwartych</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 text-sm text-gray-600">
                 <span>Bigówka 332</span>
                 <span>Bigówka 332B Swift Lite</span>
