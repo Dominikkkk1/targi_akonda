@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <Image src="/akonda-logo.png" alt="Akonda" width={120} height={30} className="h-7 w-auto" />
             <span className="hidden sm:block text-[10px] uppercase tracking-widest text-gray-400 font-semibold border-l border-gray-200 pl-3">
-              Wystawa Maszyn · 25–26.06.2026
+              Showroom Maszyn · 25–26.06.2026
             </span>
           </div>
           <a href="#rejestracja" className="h-8 px-4 bg-navy text-white text-xs font-bold rounded-md inline-flex items-center hover:bg-navy-dark transition-colors">
@@ -37,14 +37,14 @@ export default function Home() {
 
               <FadeInUp delay={0.12}>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
-                  Wystawa Maszyn<br />
+                  Showroom Maszyn<br />
                   <span className="text-white/60">Introligatorskich</span>
                 </h1>
               </FadeInUp>
 
               <FadeInUp delay={0.24}>
                 <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8">
-                  Zapraszamy na ekskluzywną prezentację maszyn introligatorskich
+                  Zapraszamy na ekskluzywny showroom maszyn introligatorskich
                   w&nbsp;Hotelu Diament Vacanza w&nbsp;Siemianowicach Śląskich. Zobacz na żywo
                   plotery iEcho&nbsp;PK, gilotyny, bigówki, foliarki i&nbsp;systemy broszurowania.
                 </p>
@@ -67,7 +67,7 @@ export default function Home() {
             <SlideInRight delay={0.4} className="hidden lg:block lg:col-span-2">
               <Float>
                 <div className="relative h-72 rounded-xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 p-4">
-                  <Image src="/machines/pk-new.png" alt="iEcho PK0705+" fill className="object-contain drop-shadow-2xl" />
+                  <Image src="/machines/pk-new.webp" alt="iEcho PK0705+" fill className="object-contain drop-shadow-2xl" />
                 </div>
               </Float>
               <p className="text-center text-white/50 text-[11px] font-semibold mt-3 uppercase tracking-widest">iEcho PK0705+</p>
@@ -80,7 +80,7 @@ export default function Home() {
       <section className="bg-navy">
         <div className="mx-auto max-w-5xl px-5 py-7 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
           {[
-            ["2", "Dni wystawy"],
+            ["2", "Dni showroomu"],
             ["20+", "Maszyn na żywo"],
             ["3000+", "Instalacji w Polsce"],
             ["15+", "Lat doświadczenia"],
@@ -121,7 +121,7 @@ export default function Home() {
           <Reveal>
             <div className="text-center mb-12">
               <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-navy bg-navy-light px-3 py-1 rounded-full mb-3">
-                Na wystawie
+                W showroomie
               </span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-navy">
                 Co zobaczysz na żywo?
@@ -130,7 +130,7 @@ export default function Home() {
           </Reveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            <Reveal delay={1}><MachineCard src="/machines/pk-new.png" alt="iEcho PK0705+" tag="Ploter tnący" title="iEcho PK0705+" desc="Bestsellerowy ploter z automatycznym podajnikiem arkuszy. Produkcja opakowań, etykiet i wykrojników." /></Reveal>
+            <Reveal delay={1}><MachineCard src="/machines/pk-new.webp" alt="iEcho PK0705+" tag="Ploter tnący" title="iEcho PK0705+" desc="Bestsellerowy ploter z automatycznym podajnikiem arkuszy. Produkcja opakowań, etykiet i wykrojników." /></Reveal>
             <Reveal delay={2}><MachineCard src="/machines/hydrocut.jpg" alt="Hydrocut 52 Pro" tag="Gilotyny" title="Hydrocut 49 / 52 / 72" desc="Seria gilotyn hydraulicznych do profesjonalnego cięcia. Precyzja i niezawodność." /></Reveal>
             <Reveal delay={3}><MachineCard src="/machines/digicut49.jpg" alt="Digicut 49" tag="Gilotyna" title="Digicut 49" desc="Kompaktowa gilotyna cyfrowa z programowalnym dociskiem i cięciem." /></Reveal>
             <Reveal delay={1}><MachineCard src="/machines/scc.jpg" alt="Wyciarka SCC" tag="Wyciarka" title="Wyciarka SCC" desc="Kombajn introligatorski do precyzyjnego wykrawania i bigowania." /></Reveal>
@@ -145,8 +145,16 @@ export default function Home() {
           </div>
 
           <Reveal>
+            <div className="mt-8 text-center">
+              <a href="#rejestracja" className="inline-flex items-center h-12 px-8 bg-navy text-white font-bold text-sm rounded-md hover:bg-navy-dark transition-colors">
+                Chcę zobaczyć maszyny na żywo&nbsp;→
+              </a>
+            </div>
+          </Reveal>
+
+          <Reveal>
             <div className="mt-5 bg-navy-light border border-gray-200 rounded-xl p-6">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Również na wystawie</p>
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Również w showroomie</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 text-sm text-gray-600">
                 <span>Bigówka 332</span>
                 <span>Bigówka 332B Swift Lite</span>
@@ -186,7 +194,7 @@ export default function Home() {
               <div className="bg-white border border-gray-200 rounded-xl p-6">
                 <div className="grid grid-cols-2 gap-4">
                   {[
-                    ["ŚR", "25.06", "Dzień otwarcia"],
+                    ["ŚR", "25.06", "Prezentacje"],
                     ["CZW", "26.06", "Prezentacje"],
                   ].map(([day, date, desc], i) => (
                     <div key={i} className="text-center p-4 rounded-lg bg-gray-50 border border-gray-200 transition-all duration-300 hover:border-navy/30 hover:shadow-sm">

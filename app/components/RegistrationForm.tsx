@@ -32,6 +32,11 @@ export default function RegistrationForm() {
       }
 
       setStatus("success");
+
+      // Meta Pixel - Lead event
+      if (typeof window !== "undefined" && (window as typeof window & { fbq?: (...args: unknown[]) => void }).fbq) {
+        (window as typeof window & { fbq?: (...args: unknown[]) => void }).fbq!("track", "Lead");
+      }
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Wystąpił błąd");
@@ -110,12 +115,12 @@ export default function RegistrationForm() {
             Wysyłanie...
           </span>
         ) : (
-          "Zapisz się na wystawę →"
+          "Zapisz się na showroom →"
         )}
       </button>
 
       <p className="text-[11px] text-gray-400 text-center">
-        Twoje dane są bezpieczne. Wykorzystamy je wyłącznie w&nbsp;celu organizacji wystawy.
+        Twoje dane są bezpieczne. Wykorzystamy je wyłącznie w&nbsp;celu organizacji showroomu.
       </p>
     </form>
   );
