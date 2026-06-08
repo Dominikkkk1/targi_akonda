@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* ── Hero ── */}
       <section className="relative pt-14">
-        <Image src="/hero-bg.jpg" alt="" fill className="object-cover" priority />
+        <Image src="/spodek-bg.jpg" alt="" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-navy/75" />
         <div className="relative mx-auto max-w-5xl px-5 py-20 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
@@ -166,7 +166,7 @@ export default function Home() {
 
       {/* ── Szczegóły ── */}
       <section className="relative py-16 md:py-24 border-y border-gray-200 overflow-hidden">
-        <Image src="/spodek-bg.jpg" alt="" fill className="object-cover" />
+        <Image src="/hero-bg.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-gray-50/90" />
         <div className="relative mx-auto max-w-5xl px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
