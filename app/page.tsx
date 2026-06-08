@@ -38,7 +38,7 @@ export default function Home() {
               <FadeInUp delay={0.12}>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
                   Dni Otwarte<br />
-                  <span className="text-white/60">Introligatorskich</span>
+                  <span className="text-white/60">Maszyn Introligatorskich</span>
                 </h1>
               </FadeInUp>
 
