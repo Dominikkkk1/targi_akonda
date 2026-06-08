@@ -23,9 +23,9 @@ export async function POST(request: Request) {
 
     // Mail potwierdzający do osoby zapisującej się
     await resend.emails.send({
-      from: "Akonda Targi <targi@akonda.pl>",
+      from: "Akonda Targi <targi@lp.akonda.pl>",
       to: email,
-      subject: "Potwierdzenie zapisu – Wystawa Maszyn Akonda, Siemianowice Śląskie",
+      subject: "Potwierdzenie rejestracji – Wystawa Maszyn Akonda, 25–26 czerwca",
       html: `
         <div style="font-family: Montserrat, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff;">
           <div style="background: #1f356a; padding: 32px; text-align: center;">
@@ -38,9 +38,9 @@ export async function POST(request: Request) {
               Potwierdzamy Twój zapis na Wystawę Maszyn Akonda w Siemianowicach Śląskich.
             </p>
             <div style="background: #f7f8fc; border-radius: 10px; padding: 24px; margin: 24px 0;">
-              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Data:</strong> <span style="color: #5a647a;">25–28 czerwca 2026</span></p>
+              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Data:</strong> <span style="color: #5a647a;">25–26 czerwca 2026 (środa – czwartek)</span></p>
               <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Miejsce:</strong> <span style="color: #5a647a;">Hotel Diament Vacanza, Siemianowice Śląskie</span></p>
-              <p style="margin: 0; font-size: 13px;"><strong style="color: #1f356a;">Na wystawie:</strong> <span style="color: #5a647a;">Maszyny introligatorskie, iEcho PK, premiera BK4 na Śląsku</span></p>
+              <p style="margin: 0; font-size: 13px;"><strong style="color: #1f356a;">Na wystawie:</strong> <span style="color: #5a647a;">Maszyny introligatorskie, plotery iEcho PK, gilotyny, foliarki i więcej</span></p>
             </div>
             <p style="color: #5a647a; font-size: 14px; line-height: 1.6;">
               Wkrótce skontaktujemy się z Tobą z dodatkowymi informacjami.
@@ -57,15 +57,15 @@ export async function POST(request: Request) {
       `,
     });
 
-    // Mail powiadomienie do Akonda
+    // Mail powiadomienie do Akonda - nowy lead z eventu do obsłużenia
     await resend.emails.send({
-      from: "Akonda Targi <targi@akonda.pl>",
-      to: "info@akonda.pl",
-      subject: `Nowy zapis na targi – ${name} (${company})`,
+      from: "Akonda Targi <targi@lp.akonda.pl>",
+      to: ["kontakt@akonda.pl", "sales@akonda.pl"],
+      subject: `Nowy lead z eventu do obsłużenia – ${name} (${company})`,
       html: `
         <div style="font-family: Montserrat, Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #1f356a; padding: 24px; text-align: center;">
-            <h1 style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 800;">Nowy zapis na wystawę</h1>
+            <h1 style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 800;">Nowy lead z eventu do obsłużenia</h1>
           </div>
           <div style="padding: 24px;">
             <table style="width: 100%; border-collapse: collapse;">

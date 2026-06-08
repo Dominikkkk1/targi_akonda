@@ -9,9 +9,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Akonda | Wystawa Maszyn – Siemianowice Śląskie 25–28 Czerwca",
+  title: "Akonda | Wystawa Maszyn – Siemianowice Śląskie 25–26 Czerwca",
   description:
-    "Zapraszamy na wystawę maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, maszyny introligatorskie oraz premiera BK4 na Śląsku! 25–28 czerwca 2026.",
+    "Zapraszamy na wystawę maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 25–26 czerwca 2026.",
 };
 
 export default function RootLayout({

@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <Image src="/akonda-logo.png" alt="Akonda" width={120} height={30} className="h-7 w-auto" />
             <span className="hidden sm:block text-[10px] uppercase tracking-widest text-gray-400 font-semibold border-l border-gray-200 pl-3">
-              Wystawa Maszyn 2026
+              Wystawa Maszyn · 25–26.06.2026
             </span>
           </div>
           <a href="#rejestracja" className="h-8 px-4 bg-navy text-white text-xs font-bold rounded-md inline-flex items-center hover:bg-navy-dark transition-colors">
@@ -31,7 +31,7 @@ export default function Home() {
             <div className="lg:col-span-3">
               <FadeInUp delay={0}>
                 <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1 rounded-full mb-5">
-                  25–28 Czerwca 2026 · Hotel Diament Vacanza · Siemianowice Śląskie
+                  25–26 Czerwca 2026 · Hotel Diament Vacanza · Siemianowice Śląskie
                 </span>
               </FadeInUp>
 
@@ -46,9 +46,7 @@ export default function Home() {
                 <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8">
                   Zapraszamy na ekskluzywną prezentację maszyn introligatorskich
                   w&nbsp;Hotelu Diament Vacanza w&nbsp;Siemianowicach Śląskich. Zobacz na żywo
-                  plotery iEcho&nbsp;PK, gilotyny, bigówki, foliarki, systemy broszurowania
-                  oraz po raz pierwszy na Śląsku
-                  —&nbsp;<strong className="text-white">iEcho&nbsp;BK4</strong>.
+                  plotery iEcho&nbsp;PK, gilotyny, bigówki, foliarki i&nbsp;systemy broszurowania.
                 </p>
               </FadeInUp>
 
@@ -82,10 +80,10 @@ export default function Home() {
       <section className="bg-navy">
         <div className="mx-auto max-w-5xl px-5 py-7 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
           {[
-            ["4", "Dni wystawy"],
+            ["2", "Dni wystawy"],
             ["20+", "Maszyn na żywo"],
             ["3000+", "Instalacji w Polsce"],
-            ["1", "Premiera na Śląsku"],
+            ["15+", "Lat doświadczenia"],
           ].map(([val, label], i) => (
             <Reveal key={i} delay={i + 1}>
               <p className="text-2xl md:text-3xl font-extrabold">{val}</p>
@@ -112,7 +110,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2.5">
             <svg className="w-4 h-4 text-navy shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
-            <span className="text-sm font-semibold text-navy">Premiera BK4 na Śląsku</span>
+            <span className="text-sm font-semibold text-navy">Plotery tnąco-bigujące na żywo</span>
           </div>
         </div>
       </section>
@@ -138,42 +136,20 @@ export default function Home() {
             <Reveal delay={1}><MachineCard src="/machines/scc.jpg" alt="Wyciarka SCC" tag="Wyciarka" title="Wyciarka SCC" desc="Kombajn introligatorski do precyzyjnego wykrawania i bigowania." /></Reveal>
             <Reveal delay={2}><MachineCard src="/machines/foliarka-b3.avif" alt="Foliarka B3 365bind" tag="Foliarka" title="Foliarka B3 365bind" desc="Półautomatyczna foliarka w formacie B3 do laminowania i uszlachetniania." /></Reveal>
             <Reveal delay={3}><MachineCard src="/machines/banderolownica.jpg" alt="Banderolownica WK" tag="Banderolownica" title="Banderolownica WK" desc="Automatyczne banderolowanie produktów papierową lub foliową taśmą." /></Reveal>
+            <Reveal delay={1}><MachineCard src="/machines/fb3550.jpg" alt="365bind FB3550" tag="Ploter tnąco-bigujący" title="365bind FB3550" desc="Płaski ploter tnąco-bigujący do precyzyjnego cięcia i bigowania arkuszy." /></Reveal>
+            <Reveal delay={2}><MachineCard src="/machines/broszurownica-oursun.png" alt="Broszurownica Oursun" tag="Broszurowanie" title="Broszurownica Oursun" desc="System broszurowania do automatycznego zszywania i składania dokumentów." /></Reveal>
+            <Reveal delay={3}><MachineCard src="/machines/fastbind-one-handy.webp" alt="Fastbind ONE Handy" tag="Oklejarka" title="Fastbind ONE Handy" desc="Kompaktowa oklejarka do profesjonalnej oprawy twardej i miękkiej." /></Reveal>
+            <Reveal delay={1}><MachineCard src="/machines/ausjetech-338c.png" alt="Ausjetech 338C" tag="Bigówka" title="Ausjetech 338C" desc="Automatyczna bigówka do precyzyjnego bigowania i perforacji arkuszy." /></Reveal>
+            <Reveal delay={2}><MachineCard src="/machines/fastbind-casematic.webp" alt="Fastbind Casematic" tag="Oklejarka" title="Fastbind Casematic" desc="Maszyna do produkcji okładek twardych z precyzyjnym pozycjonowaniem." /></Reveal>
+            <Reveal delay={3}><MachineCard src="/machines/oklejarka-pb2000.webp" alt="Oklejarka PB2000" tag="Oklejarka" title="Oklejarka PB2000" desc="Oklejarka do oprawy klejowej z automatycznym podajnikiem i prasą." /></Reveal>
           </div>
-
-          {/* BK4 */}
-          <Reveal>
-            <div className="mt-5 relative bg-white border-2 border-navy rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <span className="absolute -top-3 left-5 bg-navy text-white text-[10px] font-bold uppercase tracking-widest px-3 py-0.5 rounded-full">
-                Premiera na Śląsku!
-              </span>
-              <div className="flex flex-col md:flex-row gap-6 items-center">
-                <div className="w-10 h-10 rounded-lg bg-navy text-white flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-lg font-extrabold text-navy mb-1">iEcho BK4</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed">
-                    Po raz pierwszy na Śląsku! Szybki ploter tnący nowej generacji. Poznaj możliwości BK4 na żywo i&nbsp;przekonaj się o&nbsp;jego wydajności w&nbsp;realnych warunkach produkcyjnych.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Reveal>
 
           <Reveal>
             <div className="mt-5 bg-navy-light border border-gray-200 rounded-xl p-6">
               <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Również na wystawie</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 text-sm text-gray-600">
-                <span>Ploter 365bind 3550</span>
-                <span>Bigówka 338C</span>
                 <span>Bigówka 332</span>
                 <span>Bigówka 332B Swift Lite</span>
-                <span>Broszurowanie Oursun</span>
-                <span>Fastbind One Handy+</span>
-                <span>Fastbind Casematic</span>
-                <span>Oklejarka PB2000</span>
               </div>
             </div>
           </Reveal>
@@ -190,7 +166,7 @@ export default function Home() {
                   Szczegóły wydarzenia
                 </span>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-4">
-                  4 dni z&nbsp;maszynami, które zmieniają branżę
+                  2 dni z&nbsp;maszynami, które zmieniają branżę
                 </h2>
                 <p className="text-gray-500 text-sm leading-relaxed mb-6">
                   Przyjdź i&nbsp;przekonaj się na własne oczy, jak nasze maszyny mogą
@@ -198,7 +174,7 @@ export default function Home() {
                   odpowiedzieć na wszystkie pytania.
                 </p>
                 <ul className="space-y-3 text-sm">
-                  <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Data</span><p className="font-semibold text-navy">25–28 czerwca 2026 (środa – sobota)</p></div></li>
+                  <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Data</span><p className="font-semibold text-navy">25–26 czerwca 2026 (środa – czwartek)</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Miejsce</span><p className="font-semibold text-navy">Hotel Diament Vacanza, Siemianowice Śląskie</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Wstęp</span><p className="font-semibold text-navy">Bezpłatny – wymagana rejestracja</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Kontakt</span><p className="font-semibold text-navy">info@akonda.pl</p></div></li>
@@ -212,8 +188,6 @@ export default function Home() {
                   {[
                     ["ŚR", "25.06", "Dzień otwarcia"],
                     ["CZW", "26.06", "Prezentacje"],
-                    ["PT", "27.06", "Prezentacje"],
-                    ["SOB", "28.06", "Ostatni dzień"],
                   ].map(([day, date, desc], i) => (
                     <div key={i} className="text-center p-4 rounded-lg bg-gray-50 border border-gray-200 transition-all duration-300 hover:border-navy/30 hover:shadow-sm">
                       <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">{day}</span>
