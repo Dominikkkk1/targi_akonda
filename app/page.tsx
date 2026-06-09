@@ -130,18 +130,26 @@ export default function Home() {
           </Reveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {/* Plotery */}
             <Reveal delay={1}><MachineCard src="/machines/pk-new.webp" alt="iEcho PK0705+" tag="Ploter tnący" title="iEcho PK0705+" desc="Bestsellerowy ploter z automatycznym podajnikiem arkuszy. Produkcja opakowań, etykiet i wykrojników." /></Reveal>
-            <Reveal delay={2}><MachineCard src="/machines/hydrocut.jpg" alt="Hydrocut 52 Pro" tag="Gilotyny" title="Hydrocut 49 / 52 / 72" desc="Seria gilotyn hydraulicznych do profesjonalnego cięcia. Precyzja i niezawodność." /></Reveal>
-            <Reveal delay={3}><MachineCard src="/machines/digicut49.jpg" alt="Digicut 49" tag="Gilotyna" title="Digicut 49" desc="Kompaktowa gilotyna cyfrowa z programowalnym dociskiem i cięciem." /></Reveal>
-            <Reveal delay={1}><MachineCard src="/machines/scc.jpg" alt="Wyciarka SCC" tag="Wyciarka" title="Wyciarka SCC" desc="Kombajn introligatorski do precyzyjnego wykrawania i bigowania." /></Reveal>
-            <Reveal delay={2}><MachineCard src="/machines/foliarka-b3.avif" alt="Foliarka B3 365bind" tag="Foliarka" title="Foliarka B3 365bind" desc="Półautomatyczna foliarka w formacie B3 do laminowania i uszlachetniania." /></Reveal>
-            <Reveal delay={3}><MachineCard src="/machines/banderolownica.jpg" alt="Banderolownica WK" tag="Banderolownica" title="Banderolownica WK" desc="Automatyczne banderolowanie produktów papierową lub foliową taśmą." /></Reveal>
-            <Reveal delay={1}><MachineCard src="/machines/fb3550.jpg" alt="365bind FB3550" tag="Ploter tnąco-bigujący" title="365bind FB3550" desc="Płaski ploter tnąco-bigujący do precyzyjnego cięcia i bigowania arkuszy." /></Reveal>
-            <Reveal delay={2}><MachineCard src="/machines/broszurownica-oursun.png" alt="Broszurownica Oursun" tag="Broszurowanie" title="Broszurownica Oursun" desc="System broszurowania do automatycznego zszywania i składania dokumentów." /></Reveal>
-            <Reveal delay={3}><MachineCard src="/machines/fastbind-one-handy.webp" alt="Fastbind ONE Handy" tag="Oklejarka" title="Fastbind ONE Handy" desc="Kompaktowa oklejarka do profesjonalnej oprawy twardej i miękkiej." /></Reveal>
-            <Reveal delay={1}><MachineCard src="/machines/ausjetech-338c.png" alt="Ausjetech 338C" tag="Bigówka" title="Ausjetech 338C" desc="Automatyczna bigówka do precyzyjnego bigowania i perforacji arkuszy." /></Reveal>
-            <Reveal delay={2}><MachineCard src="/machines/fastbind-casematic.webp" alt="Fastbind Casematic" tag="Oklejarka" title="Fastbind Casematic" desc="Maszyna do produkcji okładek twardych z precyzyjnym pozycjonowaniem." /></Reveal>
-            <Reveal delay={3}><MachineCard src="/machines/oklejarka-pb2000.webp" alt="Oklejarka PB2000" tag="Oklejarka" title="Oklejarka PB2000" desc="Oklejarka do oprawy klejowej z automatycznym podajnikiem i prasą." /></Reveal>
+            <Reveal delay={2}><MachineCard src="/machines/fb3550.jpg" alt="365bind FB3550" tag="Ploter tnąco-bigujący" title="365bind FB3550" desc="Płaski ploter tnąco-bigujący do precyzyjnego cięcia i bigowania arkuszy." /></Reveal>
+            {/* Gilotyny */}
+            <Reveal delay={3}><MachineCard src="/machines/hydrocut.jpg" alt="Hydrocut 52 Pro" tag="Gilotyna" title="Hydrocut 49 / 52 / 72" desc="Seria gilotyn hydraulicznych do profesjonalnego cięcia. Precyzja i niezawodność." /></Reveal>
+            <Reveal delay={1}><MachineCard src="/machines/digicut49.jpg" alt="Digicut 49" tag="Gilotyna" title="Digicut 49" desc="Kompaktowa gilotyna cyfrowa z programowalnym dociskiem i cięciem." /></Reveal>
+            {/* Oklejarki */}
+            <Reveal delay={2}><MachineCard src="/machines/fastbind-one-handy.webp" alt="Fastbind ONE Handy" tag="Oklejarka" title="Fastbind ONE Handy" desc="Kompaktowa oklejarka do profesjonalnej oprawy twardej i miękkiej." /></Reveal>
+            <Reveal delay={3}><MachineCard src="/machines/fastbind-casematic.webp" alt="Fastbind Casematic" tag="Oklejarka" title="Fastbind Casematic" desc="Maszyna do produkcji okładek twardych z precyzyjnym pozycjonowaniem." /></Reveal>
+            <Reveal delay={1}><MachineCard src="/machines/oklejarka-pb2000.webp" alt="Oklejarka PB2000" tag="Oklejarka" title="Oklejarka PB2000" desc="Oklejarka do oprawy klejowej z automatycznym podajnikiem i prasą." /></Reveal>
+            {/* Bigówka */}
+            <Reveal delay={2}><MachineCard src="/machines/ausjetech-338c.png" alt="Ausjetech 338C" tag="Bigówka" title="Ausjetech 338C" desc="Automatyczna bigówka do precyzyjnego bigowania i perforacji arkuszy." /></Reveal>
+            {/* Wyciarka */}
+            <Reveal delay={3}><MachineCard src="/machines/scc.jpg" alt="Wyciarka SCC" tag="Wyciarka" title="Wyciarka SCC" desc="Kombajn introligatorski do precyzyjnego wykrawania i bigowania." /></Reveal>
+            {/* Foliarka */}
+            <Reveal delay={1}><MachineCard src="/machines/foliarka-b3.avif" alt="Foliarka B3 365bind" tag="Foliarka" title="Foliarka B3 365bind" desc="Półautomatyczna foliarka w formacie B3 do laminowania i uszlachetniania." /></Reveal>
+            {/* Banderolownica */}
+            <Reveal delay={2}><MachineCard src="/machines/banderolownica.jpg" alt="Banderolownica WK" tag="Banderolownica" title="Banderolownica WK" desc="Automatyczne banderolowanie produktów papierową lub foliową taśmą." /></Reveal>
+            {/* Broszurownica */}
+            <Reveal delay={3}><MachineCard src="/machines/broszurownica-oursun.png" alt="Broszurownica Oursun" tag="Broszurowanie" title="Broszurownica Oursun" desc="System broszurowania do automatycznego zszywania i składania dokumentów." /></Reveal>
           </div>
 
           <Reveal>
