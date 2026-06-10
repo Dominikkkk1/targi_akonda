@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <Image src="/akonda-logo.png" alt="Akonda" width={120} height={30} className="h-7 w-auto" />
             <span className="hidden sm:block text-[10px] uppercase tracking-widest text-gray-400 font-semibold border-l border-gray-200 pl-3">
-              Dni Otwarte · 25–26.06.2026
+              Dni Otwarte · 24–25.06.2026
             </span>
           </div>
           <a href="#rejestracja" className="h-8 px-4 bg-navy text-white text-xs font-bold rounded-md inline-flex items-center hover:bg-navy-dark transition-colors">
@@ -31,7 +31,7 @@ export default function Home() {
             <div className="lg:col-span-3">
               <FadeInUp delay={0}>
                 <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1 rounded-full mb-5">
-                  25–26 Czerwca 2026 · Hotel Diament Vacanza · Siemianowice Śląskie
+                  24–25 Czerwca 2026 · Hotel Diament Vacanza · Siemianowice Śląskie
                 </span>
               </FadeInUp>
 
@@ -192,7 +192,7 @@ export default function Home() {
                   odpowiedzieć na wszystkie pytania.
                 </p>
                 <ul className="space-y-3 text-sm">
-                  <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Data</span><p className="font-semibold text-navy">25–26 czerwca 2026 (środa – czwartek)</p></div></li>
+                  <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Data</span><p className="font-semibold text-navy">24–25 czerwca 2026 (środa – czwartek)</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Miejsce</span><p className="font-semibold text-navy">Hotel Diament Vacanza, Siemianowice Śląskie</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Wstęp</span><p className="font-semibold text-navy">Bezpłatny – wymagana rejestracja</p></div></li>
                   <li className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-navy shrink-0" /><div><span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Kontakt</span><p className="font-semibold text-navy">kontakt@akonda.pl</p></div></li>
@@ -204,8 +204,8 @@ export default function Home() {
               <div className="bg-white border border-gray-200 rounded-xl p-8">
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    ["ŚR", "25.06", "Prezentacje"],
-                    ["CZW", "26.06", "Prezentacje"],
+                    ["ŚR", "24.06", "Prezentacje"],
+                    ["CZW", "25.06", "Prezentacje"],
                   ].map(([day, date, desc], i) => (
                     <div key={i} className="text-center p-8 rounded-xl bg-gray-50 border border-gray-200 transition-all duration-300 hover:border-navy/30 hover:shadow-sm">
                       <span className="text-xs font-bold uppercase tracking-widest text-gray-400">{day}</span>

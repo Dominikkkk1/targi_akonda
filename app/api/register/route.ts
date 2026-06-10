@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       from: "Akonda Targi <targi@lp.akonda.pl>",
       replyTo: "kontakt@akonda.pl",
       to: email,
-      subject: "Potwierdzenie rejestracji – Dni Otwarte Akonda, 25–26 czerwca",
+      subject: "Potwierdzenie rejestracji – Dni Otwarte Akonda, 24–25 czerwca",
       html: `
         <div style="font-family: Montserrat, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff;">
           <div style="background: #1f356a; padding: 32px; text-align: center;">
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
               Potwierdzamy Twój zapis na Dni Otwarte Akonda w Siemianowicach Śląskich.
             </p>
             <div style="background: #f7f8fc; border-radius: 10px; padding: 24px; margin: 24px 0;">
-              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Data:</strong> <span style="color: #5a647a;">25–26 czerwca 2026 (środa – czwartek)</span></p>
+              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Data:</strong> <span style="color: #5a647a;">24–25 czerwca 2026 (środa – czwartek)</span></p>
               <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Miejsce:</strong> <span style="color: #5a647a;">Hotel Diament Vacanza, Siemianowice Śląskie</span></p>
               <p style="margin: 0; font-size: 13px;"><strong style="color: #1f356a;">Na wystawie:</strong> <span style="color: #5a647a;">Maszyny introligatorskie, plotery iEcho PK, gilotyny, foliarki i więcej</span></p>
             </div>

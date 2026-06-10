@@ -54,7 +54,7 @@ export default function RegistrationForm() {
         <h3 className="text-lg font-extrabold text-navy mb-2">Rejestracja potwierdzona!</h3>
         <p className="text-gray-500 text-sm">
           Potwierdzenie zostało wysłane na Twój adres email.<br />
-          Do zobaczenia 25–26 czerwca w&nbsp;Siemianowicach Śląskich!
+          Do zobaczenia 24–25 czerwca w&nbsp;Siemianowicach Śląskich!
         </p>
       </div>
     );

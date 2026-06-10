@@ -9,13 +9,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Akonda | Dni Otwarte Maszyn – Siemianowice Śląskie 25–26 Czerwca",
+  title: "Akonda | Dni Otwarte Maszyn – Siemianowice Śląskie 24–25 Czerwca",
   description:
-    "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 25–26 czerwca 2026.",
+    "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 24–25 czerwca 2026.",
   openGraph: {
-    title: "Akonda | Dni Otwarte Maszyn – Siemianowice Śląskie 25–26 Czerwca",
+    title: "Akonda | Dni Otwarte Maszyn – Siemianowice Śląskie 24–25 Czerwca",
     description:
-      "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 25–26 czerwca 2026.",
+      "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 24–25 czerwca 2026.",
     type: "website",
     images: ["/spodek-bg.jpg"],
   },
