@@ -9,13 +9,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Akonda | Dni Otwarte Maszyn – Siemianowice Śląskie 24–25 Czerwca",
+  title: "Akonda | Dni Otwarte Maszyn – Warszawa 27–28 Sierpnia",
   description:
-    "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 24–25 czerwca 2026.",
+    "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda u Market Print Global w Warszawie. Nowy Multigraf CF375, 365bind, foliarki, oklejarki i linie broszurujące. 27–28 sierpnia 2026.",
   openGraph: {
-    title: "Akonda | Dni Otwarte Maszyn – Siemianowice Śląskie 24–25 Czerwca",
+    title: "Akonda | Dni Otwarte Maszyn – Warszawa 27–28 Sierpnia",
     description:
-      "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda w Siemianowicach Śląskich. Plotery iEcho PK, gilotyny, foliarki i maszyny introligatorskie. 24–25 czerwca 2026.",
+      "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda u Market Print Global w Warszawie. Nowy Multigraf CF375, 365bind, foliarki, oklejarki i linie broszurujące. 27–28 sierpnia 2026.",
     type: "website",
     images: ["/spodek-bg.jpg"],
   },

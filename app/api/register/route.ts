@@ -1,12 +1,25 @@
 import { Resend } from "resend";
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 export async function POST(request: Request) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await request.json();
-    const { name, email, company, phone, message } = body;
+    const rawName = body.name;
+    const rawEmail = body.email;
+    const rawCompany = body.company;
+    const rawPhone = body.phone;
+    const rawMessage = body.message;
 
-    if (!name || !email || !company) {
+    if (!rawName || !rawEmail || !rawCompany) {
       return Response.json(
         { error: "Imię, email i firma są wymagane." },
         { status: 400 }
@@ -14,19 +27,25 @@ export async function POST(request: Request) {
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(rawEmail)) {
       return Response.json(
         { error: "Nieprawidłowy adres email." },
         { status: 400 }
       );
     }
 
+    const name = escapeHtml(rawName);
+    const email = rawEmail;
+    const company = escapeHtml(rawCompany);
+    const phone = rawPhone ? escapeHtml(rawPhone) : "";
+    const message = rawMessage ? escapeHtml(rawMessage) : "";
+
     // Mail potwierdzający do osoby zapisującej się
     await resend.emails.send({
       from: "Akonda Targi <targi@lp.akonda.pl>",
       replyTo: "kontakt@akonda.pl",
-      to: email,
-      subject: "Potwierdzenie rejestracji – Dni Otwarte Akonda, 24–25 czerwca",
+      to: rawEmail,
+      subject: "Potwierdzenie rejestracji – Dni Otwarte Akonda, 27–28 sierpnia, Warszawa",
       html: `
         <div style="font-family: Montserrat, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff;">
           <div style="background: #1f356a; padding: 32px; text-align: center;">
@@ -36,12 +55,12 @@ export async function POST(request: Request) {
           <div style="padding: 32px;">
             <h2 style="color: #1f356a; font-size: 20px; margin: 0 0 16px;">Dziękujemy za rejestrację, ${name}!</h2>
             <p style="color: #5a647a; font-size: 14px; line-height: 1.6;">
-              Potwierdzamy Twój zapis na Dni Otwarte Akonda w Siemianowicach Śląskich.
+              Potwierdzamy Twój zapis na Dni Otwarte Akonda u Market Print Global w Warszawie.
             </p>
             <div style="background: #f7f8fc; border-radius: 10px; padding: 24px; margin: 24px 0;">
-              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Data:</strong> <span style="color: #5a647a;">24–25 czerwca 2026 (środa – czwartek)</span></p>
-              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Miejsce:</strong> <span style="color: #5a647a;">Hotel Diament Vacanza, Siemianowice Śląskie</span></p>
-              <p style="margin: 0; font-size: 13px;"><strong style="color: #1f356a;">Na wystawie:</strong> <span style="color: #5a647a;">Maszyny introligatorskie, plotery iEcho PK, gilotyny, foliarki i więcej</span></p>
+              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Data:</strong> <span style="color: #5a647a;">27–28 sierpnia 2026 (czwartek – piątek)</span></p>
+              <p style="margin: 0 0 8px; font-size: 13px;"><strong style="color: #1f356a;">Miejsce:</strong> <span style="color: #5a647a;">Market Print Global, ul. Fortuny 3A, Warszawa</span></p>
+              <p style="margin: 0; font-size: 13px;"><strong style="color: #1f356a;">Na wystawie:</strong> <span style="color: #5a647a;">Nowy Multigraf CF375, 365bind, oklejarki, foliarki, linie broszurujące i więcej</span></p>
             </div>
             <p style="color: #5a647a; font-size: 14px; line-height: 1.6;">
               Wkrótce skontaktujemy się z Tobą z dodatkowymi informacjami.
@@ -62,11 +81,11 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: "Akonda Targi <targi@lp.akonda.pl>",
       to: ["kontakt@akonda.pl", "sales@akonda.pl", "dominik.papaj@key2print.com"],
-      subject: `Nowy lead z eventu do obsłużenia – ${name} (${company})`,
+      subject: `Nowy lead z eventu MPG – ${name} (${company})`,
       html: `
         <div style="font-family: Montserrat, Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #1f356a; padding: 24px; text-align: center;">
-            <h1 style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 800;">Nowy lead z eventu do obsłużenia</h1>
+            <h1 style="color: #ffffff; font-size: 18px; margin: 0; font-weight: 800;">Nowy lead z eventu MPG</h1>
           </div>
           <div style="padding: 24px;">
             <table style="width: 100%; border-collapse: collapse;">
