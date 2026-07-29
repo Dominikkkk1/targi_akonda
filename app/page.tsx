@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* ── Hero ── */}
       <section className="relative pt-14">
-        <Image src="/spodek-bg.jpg" alt="" fill className="object-cover" priority />
+        <Image src="/hero-bg-mpg.jpg" alt="" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-navy/80" />
         <div className="relative mx-auto max-w-5xl px-5 py-20 md:py-32">
           <div className="max-w-3xl">
