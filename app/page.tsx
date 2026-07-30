@@ -125,6 +125,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Dla kogo? ── */}
+      <section className="bg-white border-b border-gray-200">
+        <div className="mx-auto max-w-5xl px-5 py-8">
+          <Reveal>
+            <div className="text-center mb-5">
+              <h2 className="text-lg font-extrabold text-navy">Dla kogo są Dni Otwarte?</h2>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {[
+                ["Drukarnie cyfrowe", "Chcesz rozbudować park maszynowy o introligatorię"],
+                ["Introligatornie", "Szukasz nowszych, wydajniejszych rozwiązań"],
+                ["Studia DTP i agencje", "Planujesz produkcję in-house"],
+                ["Wydawnictwa", "Potrzebujesz oprawy twardej lub klejenia"],
+              ].map(([title, desc]) => (
+                <div key={title} className="text-center p-4 rounded-xl bg-gray-50 border border-gray-200">
+                  <p className="text-sm font-bold text-navy">{title}</p>
+                  <p className="text-[11px] text-gray-400 mt-1 leading-snug">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── Serie produktów ── */}
       <section className="bg-white border-b border-gray-200">
         <div className="mx-auto max-w-5xl px-5 py-8">
@@ -326,6 +350,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── FAQ ── */}
+      <section className="bg-white py-12 md:py-16 border-b border-gray-200">
+        <div className="mx-auto max-w-3xl px-5">
+          <Reveal>
+            <div className="text-center mb-10">
+              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-navy bg-navy-light px-3 py-1 rounded-full mb-3">
+                Pytania i odpowiedzi
+              </span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-navy">
+                Najczęściej zadawane pytania
+              </h2>
+            </div>
+          </Reveal>
+          <div className="space-y-4">
+            {[
+              ["Czy mogę przetestować maszyny na miejscu?", "Tak! Wszystkie maszyny będą uruchomione i gotowe do prezentacji. Możesz przynieść własne materiały do testów."],
+              ["Czy jest parking?", "Tak, pod adresem Fortuny 3A dostępny jest parking. Dojazd samochodem z centrum Warszawy zajmuje ok. 20 minut."],
+              ["Czy mogę przyjść tylko na jeden dzień?", "Oczywiście. Program jest taki sam w oba dni, więc wystarczy wybrać dogodny termin."],
+              ["Czy trzeba coś ze sobą zabrać?", "Nie jest to wymagane. Jeśli chcesz przetestować maszyny na własnych materiałach - zabierz próbki. Resztę zapewniamy na miejscu."],
+            ].map(([q, a]) => (
+              <Reveal key={q}>
+                <div className="border border-gray-200 rounded-xl p-5">
+                  <h3 className="text-sm font-bold text-navy mb-2">{q}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{a}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Mapa ── */}
       <section className="bg-gray-50 py-12 md:py-16">
         <div className="mx-auto max-w-5xl px-5">
@@ -357,8 +412,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Sticky CTA mobile ── */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 px-5 py-3">
+        <a href="#rejestracja" className="block w-full h-11 bg-navy text-white font-bold text-sm rounded-md flex items-center justify-center hover:bg-navy-dark transition-colors">
+          Zapisz się na Dni Otwarte&nbsp;→
+        </a>
+      </div>
+
       {/* ── Footer ── */}
-      <footer className="bg-navy py-10">
+      <footer className="bg-navy py-10 pb-24 lg:pb-10">
         <div className="mx-auto max-w-5xl px-5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-white">
             <div>
