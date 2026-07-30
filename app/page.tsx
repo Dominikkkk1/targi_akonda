@@ -264,6 +264,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Wideo ── */}
+      <section className="bg-gray-50 py-12 md:py-16 border-b border-gray-200">
+        <div className="mx-auto max-w-3xl px-5">
+          <Reveal>
+            <div className="text-center mb-8">
+              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-navy bg-navy-light px-3 py-1 rounded-full mb-3">
+                Zobacz na własne oczy
+              </span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-2">
+                Akonda u Market Print Global
+              </h2>
+              <p className="text-gray-500 text-sm">Pierwsze wdrożenie iEcho AK4 w Polsce - właśnie w tej siedzibie, którą odwiedzisz na Dniach Otwartych.</p>
+            </div>
+          </Reveal>
+          <Reveal delay={1}>
+            <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm aspect-video">
+              <iframe
+                title="iEcho AK4 – pierwsze wdrożenie w Polsce | Market Print Global"
+                src="https://www.youtube.com/embed/Tphy2PnhRAI?si=naOI6xz_RTMXjyJm"
+                width="100%"
+                height="100%"
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── Szczegóły ── */}
       <section className="relative py-16 md:py-24 border-y border-gray-200 overflow-hidden">
         <Image src="/hero-bg.jpg" alt="" fill className="object-cover" />
