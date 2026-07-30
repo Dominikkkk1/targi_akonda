@@ -26,56 +26,60 @@ export default function Home() {
       <section className="relative pt-14">
         <Image src="/hero-bg-mpg.jpg" alt="" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-navy/80" />
-        <div className="relative mx-auto max-w-5xl px-5 py-20 md:py-32">
-          <div className="max-w-3xl">
-            <FadeInUp delay={0}>
-              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1 rounded-full mb-5">
-                27–28 Sierpnia 2026 · Market Print Global · Warszawa
-              </span>
-            </FadeInUp>
+        <div className="relative mx-auto max-w-5xl px-5 py-16 md:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
+            <div className="lg:col-span-3">
+              <FadeInUp delay={0}>
+                <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1 rounded-full mb-5">
+                  27–28 Sierpnia 2026 · Market Print Global · Warszawa
+                </span>
+              </FadeInUp>
 
-            <FadeInUp delay={0.12}>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
-                Dni Otwarte<br />
-                <span className="text-white/60">Maszyn Introligatorskich</span>
-              </h1>
-            </FadeInUp>
+              <FadeInUp delay={0.12}>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
+                  Dni Otwarte<br />
+                  <span className="text-white/60">Maszyn Introligatorskich</span>
+                </h1>
+              </FadeInUp>
 
-            <FadeInUp delay={0.24}>
-              <p className="text-white/70 text-base md:text-lg leading-relaxed mb-4">
-                Zapraszamy do siedziby Market&nbsp;Print&nbsp;Global w&nbsp;Warszawie.
-                Zobacz maszyny introligatorskie w&nbsp;prawdziwej produkcji - bigówki,
-                foliarki, oklejarki, linie broszurujące i&nbsp;systemy oprawy twardej.
-              </p>
-            </FadeInUp>
+              <FadeInUp delay={0.24}>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-4">
+                  Zapraszamy do siedziby Market&nbsp;Print&nbsp;Global w&nbsp;Warszawie.
+                  Zobacz maszyny introligatorskie w&nbsp;prawdziwej produkcji - bigówki,
+                  foliarki, oklejarki, linie broszurujące i&nbsp;systemy oprawy twardej.
+                </p>
+              </FadeInUp>
 
-            <FadeInUp delay={0.3}>
-              <div className="flex flex-wrap gap-x-5 gap-y-2 mb-8">
-                <div className="flex items-center gap-2 text-white/70 text-sm">
-                  <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                  Nowy Multigraf Touchline CF375
+              <FadeInUp delay={0.3}>
+                <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
+                  <div className="flex items-center gap-2 text-white/70 text-sm">
+                    <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                    Nowy Multigraf Touchline CF375
+                  </div>
+                  <div className="flex items-center gap-2 text-white/70 text-sm">
+                    <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                    365bind - klejenie kalendarzy
+                  </div>
+                  <div className="flex items-center gap-2 text-white/70 text-sm">
+                    <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+                    Porównanie: stary vs nowy model
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-white/70 text-sm">
-                  <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                  365bind - klejenie kalendarzy
-                </div>
-                <div className="flex items-center gap-2 text-white/70 text-sm">
-                  <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                  Porównanie: stary vs nowy model
-                </div>
-              </div>
-            </FadeInUp>
+              </FadeInUp>
 
-            <FadeInUp delay={0.36}>
-              <div className="flex flex-wrap gap-3">
-                <CtaGlow>
-                  <a href="#rejestracja" className="h-11 px-7 bg-white text-navy font-bold text-sm rounded-md inline-flex items-center hover:bg-gray-100 transition-colors">
-                    Zarezerwuj miejsce&nbsp;→
-                  </a>
-                </CtaGlow>
-                <a href="#maszyny" className="h-11 px-7 border border-white/30 text-white font-semibold text-sm rounded-md inline-flex items-center hover:bg-white/10 transition-colors">
+              <FadeInUp delay={0.36}>
+                <a href="#maszyny" className="hidden lg:inline-flex h-11 px-7 border border-white/30 text-white font-semibold text-sm rounded-md items-center hover:bg-white/10 transition-colors">
                   Zobacz program
                 </a>
+              </FadeInUp>
+            </div>
+
+            {/* ── Formularz w hero ── */}
+            <FadeInUp delay={0.3} className="lg:col-span-2">
+              <div className="bg-white rounded-xl p-6 shadow-2xl">
+                <h2 className="text-lg font-extrabold text-navy mb-1">Zarezerwuj miejsce</h2>
+                <p className="text-xs text-gray-400 mb-4">Bezpłatny wstęp · Liczba miejsc ograniczona</p>
+                <RegistrationForm />
               </div>
             </FadeInUp>
           </div>
