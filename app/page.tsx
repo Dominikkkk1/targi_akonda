@@ -112,12 +112,33 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2.5">
             <svg className="w-4 h-4 text-navy shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" /><path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" /></svg>
-            <span className="text-sm font-semibold text-navy">Specjalne warunki eventowe</span>
+            <span className="text-sm font-semibold text-navy">Atrakcyjne ceny eventowe</span>
           </div>
           <div className="flex items-center gap-2.5">
             <svg className="w-4 h-4 text-navy shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /></svg>
             <span className="text-sm font-semibold text-navy">Stary vs nowy Multigraf</span>
           </div>
+        </div>
+      </section>
+
+      {/* ── Serie produktów ── */}
+      <section className="bg-white border-b border-gray-200">
+        <div className="mx-auto max-w-5xl px-5 py-8">
+          <Reveal>
+            <div className="bg-navy-light border border-gray-200 rounded-xl p-6">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Dwie serie produktów Akonda</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600">
+                <div>
+                  <p className="font-bold text-navy mb-1">Maszyny introligatorskie</p>
+                  <p className="text-xs text-gray-500">Bigówki, oklejarki, foliarki, krajarki, linie broszurujące, systemy oprawy twardej, klejenie kalendarzy</p>
+                </div>
+                <div>
+                  <p className="font-bold text-navy mb-1">Plotery tnące</p>
+                  <p className="text-xs text-gray-500">iEcho PK 0705 i AK4 - również na miejscu do obejrzenia</p>
+                </div>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -196,8 +217,8 @@ export default function Home() {
           </Reveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            <Reveal delay={1}><MachineCard src="/machines/hydrocut.jpg" alt="Hydrocut 52" tag="Krajarka" title="Hydrocut 52" desc="Krajarka hydrauliczna do precyzyjnego cięcia stosów papieru. Przywieziemy specjalnie na event." badge="Dowieziemy" /></Reveal>
-            <Reveal delay={2}><MachineCard src="/machines/foliarka-b3.avif" alt="Foliarka" tag="Foliarka" title="Foliarka półautomatyczna" desc="Foliarka do laminowania i uszlachetniania arkuszy. Również przywieziemy na Dni Otwarte." badge="Dowieziemy" /></Reveal>
+            <Reveal delay={1}><MachineCard src="/machines/hydrocut.jpg" alt="Hydrocut 52" tag="Krajarka" title="Hydrocut 52" desc="Krajarka hydrauliczna do precyzyjnego cięcia stosów papieru. Solidna konstrukcja i intuicyjna obsługa." /></Reveal>
+            <Reveal delay={2}><MachineCard src="/machines/foliarka-b3.avif" alt="Foliarka" tag="Foliarka" title="Foliarka półautomatyczna" desc="Foliarka do laminowania i uszlachetniania arkuszy. Idealna do krótkich i średnich nakładów." /></Reveal>
             <Reveal delay={3}><MachineCard tag="Oklejarka" title="Oklejarka BB3002" desc="Profesjonalna oklejarka do oprawy klejowej - w codziennej pracy u klienta." /></Reveal>
             <Reveal delay={1}><MachineCard src="/machines/cp-bourg-bme.png" alt="C.P. Bourg BM-E" tag="Broszurowanie" title="C.P. Bourg BM-E" desc="Linia broszurująca do automatycznego składania i zszywania. Działa tu na co dzień." /></Reveal>
             <Reveal delay={2}><MachineCard tag="Oprawa twarda" title="Bemini CM-01 / CM-02 / JF-01" desc="Kompletny zestaw do oprawy twardej - od oklejania po prasowanie. Trzy maszyny w jednym flow." /></Reveal>
@@ -212,22 +233,6 @@ export default function Home() {
             </div>
           </Reveal>
 
-          {/* ── Serie produktów ── */}
-          <Reveal>
-            <div className="mt-8 bg-navy-light border border-gray-200 rounded-xl p-6">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Dwie serie produktów Akonda</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>
-                  <p className="font-bold text-navy mb-1">Maszyny introligatorskie</p>
-                  <p className="text-xs text-gray-500">Bigówki, oklejarki, foliarki, krajarki, linie broszurujące, systemy oprawy twardej, klejenie kalendarzy</p>
-                </div>
-                <div>
-                  <p className="font-bold text-navy mb-1">Plotery tnące</p>
-                  <p className="text-xs text-gray-500">iEcho PK 0705 i AK4 - na miejscu u klienta do obejrzenia</p>
-                </div>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 
