@@ -222,7 +222,7 @@ export default function Home() {
             <Reveal delay={3}><MachineCard tag="Oklejarka" title="Oklejarka BB3002" desc="Profesjonalna oklejarka do oprawy klejowej - w codziennej pracy u klienta." /></Reveal>
             <Reveal delay={1}><MachineCard src="/machines/cp-bourg-bme.png" alt="C.P. Bourg BM-E" tag="Broszurowanie" title="C.P. Bourg BM-E" desc="Linia broszurująca do automatycznego składania i zszywania. Działa tu na co dzień." /></Reveal>
             <Reveal delay={2}><MachineCard tag="Oprawa twarda" title="Bemini CM-01 / CM-02 / JF-01" desc="Kompletny zestaw do oprawy twardej - od oklejania po prasowanie. Trzy maszyny w jednym flow." /></Reveal>
-            <Reveal delay={3}><MachineCard tag="Bigówka (stary model)" title="Multigraf 375 CF" desc="Poprzednia generacja - porównaj ze zupełnie nowym modelem i zobacz różnicę na własne oczy." /></Reveal>
+            <Reveal delay={3}><MachineCard src="/machines/multigraf-cf375.jpg" alt="Multigraf 375 CF" tag="Bigówka" title="Multigraf 375 CF" desc="Wielofunkcyjny system do bigowania, perforacji i numeracji arkuszy." /></Reveal>
           </div>
 
           <Reveal>
