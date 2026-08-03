@@ -30,15 +30,15 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
             <div className="lg:col-span-3">
               <FadeInUp delay={0}>
-                <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1 rounded-full mb-5">
+                <span className="inline-block text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1.5 rounded-full mb-5 leading-relaxed">
                   27–28 Sierpnia 2026 · Drukarnia Market Print Global · Warszawa
                 </span>
               </FadeInUp>
 
               <FadeInUp delay={0.12}>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
                   Dni Otwarte<br />
-                  <span className="text-white/60">Maszyn Introligatorskich oraz Ploterów Tnących</span>
+                  <span className="text-white/60">Maszyn Introligatorskich<br className="sm:hidden" /> oraz Ploterów Tnących</span>
                 </h1>
               </FadeInUp>
 
@@ -128,7 +128,7 @@ export default function Home() {
             <div className="text-center mb-5">
               <h2 className="text-lg font-extrabold text-navy">Dla kogo są Dni Otwarte?</h2>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
               {[
                 ["Drukarnie cyfrowe", "Chcesz rozbudować park maszynowy o introligatorię i cięcie naklejek czy pudełek"],
                 ["Drukarnie wielkoformatowe", "Zobacz jak iEcho AK4 przyśpieszy pracę w Twojej firmie"],
