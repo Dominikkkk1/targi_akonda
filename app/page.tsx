@@ -163,7 +163,7 @@ export default function Home() {
             <Reveal delay={1}>
               <div className="bg-white border-2 border-accent/30 rounded-xl overflow-hidden shadow-sm h-full">
                 <div className="relative h-56 bg-gray-100 overflow-hidden">
-                  <Image src="/machines/cpc375-xpro.jpg" alt="Multigraf Touchline CF375 Xpro" fill className="object-contain p-4" />
+                  <Image src="/machines/cpc375-xpro.avif" alt="Multigraf Touchline CF375 Xpro" fill className="object-contain p-4" />
                   <div className="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">
                     Premiera
                   </div>
@@ -181,11 +181,8 @@ export default function Home() {
 
             <Reveal delay={2}>
               <div className="bg-white border-2 border-accent/30 rounded-xl overflow-hidden shadow-sm h-full">
-                <div className="relative h-56 bg-gray-100 flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <svg className="w-16 h-16 text-navy/20 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}><path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>
-                    <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold">Zdjęcie wkrótce</p>
-                  </div>
+                <div className="relative h-56 bg-gray-100 overflow-hidden">
+                  <Image src="/machines/365bind-smart.png" alt="365bind Smart" fill className="object-contain p-4" />
                   <div className="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">
                     Premiera
                   </div>
@@ -224,7 +221,7 @@ export default function Home() {
             <Reveal delay={3}><MachineCard src="/machines/bb3002.webp" alt="Oklejarka BB3002" tag="Oklejarka" title="Oklejarka BB3002" desc="Profesjonalna oklejarka do oprawy klejowej - w codziennej pracy u klienta." /></Reveal>
             <Reveal delay={1}><MachineCard src="/machines/bourg-bbm.webp" alt="C.P. Bourg BM-E" tag="Broszurowanie" title="C.P. Bourg BM-E" desc="Linia broszurująca do automatycznego składania i zszywania. Działa tu na co dzień." /></Reveal>
             <Reveal delay={2}><MachineCard src="/machines/bemini-cm01.jpg" alt="Bemini CM-01" tag="Oprawa twarda" title="Bemini CM-01 / CM-02 / JF-01" desc="Kompletny zestaw do oprawy twardej - od oklejania po prasowanie. Trzy maszyny w jednym flow." /></Reveal>
-            <Reveal delay={3}><MachineCard src="/machines/multigraf-cf375.jpg" alt="Multigraf 375 CF" tag="Bigówka" title="Multigraf 375 CF" desc="Wielofunkcyjny system do bigowania, perforacji i numeracji arkuszy." /></Reveal>
+            <Reveal delay={3}><MachineCard src="/machines/multigraf-cf375.jpg" alt="Multigraf 375 CF" tag="Bigówko-falcerka" title="Multigraf 375 CF" desc="Wielofunkcyjny system do bigowania, perforacji i numeracji arkuszy." /></Reveal>
           </div>
 
           {/* ── Plotery tnące ── */}
