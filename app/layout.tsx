@@ -9,13 +9,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Akonda | Dni Otwarte Maszyn – Warszawa 27–28 Sierpnia",
+  title: "Akonda | Dni Otwarte Maszyn Introligatorskich oraz Ploterów – Warszawa 27–28 Sierpnia",
   description:
-    "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda u Market Print Global w Warszawie. Nowy Multigraf CF375, 365bind, foliarki, oklejarki i linie broszurujące. 27–28 sierpnia 2026.",
+    "Dni Otwarte w drukarni Market Print Global w Warszawie. Plotery iEcho PK 0705+ i AK4, Multigraf CF375 Xpro, 365bind Smart, oklejarki, foliarki i linie broszurujące. 27–28 sierpnia 2026.",
   openGraph: {
-    title: "Akonda | Dni Otwarte Maszyn – Warszawa 27–28 Sierpnia",
+    title: "Akonda | Dni Otwarte Maszyn Introligatorskich oraz Ploterów – Warszawa 27–28 Sierpnia",
     description:
-      "Zapraszamy na Dni Otwarte maszyn introligatorskich Akonda u Market Print Global w Warszawie. Nowy Multigraf CF375, 365bind, foliarki, oklejarki i linie broszurujące. 27–28 sierpnia 2026.",
+      "Dni Otwarte w drukarni Market Print Global w Warszawie. Plotery iEcho PK 0705+ i AK4, Multigraf CF375 Xpro, 365bind Smart, oklejarki, foliarki i linie broszurujące. 27–28 sierpnia 2026.",
     type: "website",
     images: ["/spodek-bg.jpg"],
   },

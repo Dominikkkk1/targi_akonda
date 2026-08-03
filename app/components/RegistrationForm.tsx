@@ -88,9 +88,9 @@ export default function RegistrationForm() {
         </div>
         <div>
           <label htmlFor="phone" className="block text-[11px] font-semibold text-gray-500 uppercase tracking-widest mb-1.5">
-            Telefon
+            Telefon *
           </label>
-          <input id="phone" type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+          <input id="phone" type="tel" required value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             className="block w-full h-10 px-3 text-sm border border-gray-300 rounded-md outline-none focus:border-navy transition-colors" placeholder="+48 123 456 789" />
         </div>
       </div>

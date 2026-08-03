@@ -31,21 +31,21 @@ export default function Home() {
             <div className="lg:col-span-3">
               <FadeInUp delay={0}>
                 <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1 rounded-full mb-5">
-                  27–28 Sierpnia 2026 · Market Print Global · Warszawa
+                  27–28 Sierpnia 2026 · Drukarnia Market Print Global · Warszawa
                 </span>
               </FadeInUp>
 
               <FadeInUp delay={0.12}>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
                   Dni Otwarte<br />
-                  <span className="text-white/60">Maszyn Introligatorskich</span>
+                  <span className="text-white/60">Maszyn Introligatorskich oraz Ploterów Tnących</span>
                 </h1>
               </FadeInUp>
 
               <FadeInUp delay={0.24}>
                 <p className="text-white/70 text-base md:text-lg leading-relaxed mb-4">
-                  Zapraszamy do siedziby Market&nbsp;Print&nbsp;Global w&nbsp;Warszawie.
-                  Zobacz maszyny introligatorskie w&nbsp;prawdziwej produkcji - bigówki,
+                  Zapraszamy do siedziby drukarni Market&nbsp;Print&nbsp;Global w&nbsp;Warszawie.
+                  Zobacz plotery tnące oraz maszyny introligatorskie w&nbsp;prawdziwej produkcji - bigówki,
                   foliarki, oklejarki, linie broszurujące i&nbsp;systemy oprawy twardej.
                 </p>
               </FadeInUp>
@@ -54,15 +54,11 @@ export default function Home() {
                 <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
                   <div className="flex items-center gap-2 text-white/70 text-sm">
                     <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                    Nowy Multigraf Touchline CF375
+                    Premiera bigówko-falcerki Multigraf Touchline CF375 Xpro
                   </div>
                   <div className="flex items-center gap-2 text-white/70 text-sm">
                     <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                    365bind - klejenie kalendarzy
-                  </div>
-                  <div className="flex items-center gap-2 text-white/70 text-sm">
-                    <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                    Porównanie: stary vs nowy model
+                    Premiera półautomatu do klejenia kalendarzy 365bind Smart
                   </div>
                 </div>
               </FadeInUp>
@@ -119,8 +115,8 @@ export default function Home() {
             <span className="text-sm font-semibold text-navy">Atrakcyjne ceny eventowe</span>
           </div>
           <div className="flex items-center gap-2.5">
-            <svg className="w-4 h-4 text-navy shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /></svg>
-            <span className="text-sm font-semibold text-navy">Stary vs nowy Multigraf</span>
+            <svg className="w-4 h-4 text-navy shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+            <span className="text-sm font-semibold text-navy">Plotery iEcho na żywo</span>
           </div>
         </div>
       </section>
@@ -134,37 +130,16 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {[
-                ["Drukarnie cyfrowe", "Chcesz rozbudować park maszynowy o introligatorię"],
-                ["Introligatornie", "Szukasz nowszych, wydajniejszych rozwiązań"],
+                ["Drukarnie cyfrowe", "Chcesz rozbudować park maszynowy o introligatorię i cięcie naklejek czy pudełek"],
+                ["Drukarnie wielkoformatowe", "Zobacz jak iEcho AK4 przyśpieszy pracę w Twojej firmie"],
                 ["Studia DTP i agencje", "Planujesz produkcję in-house"],
-                ["Wydawnictwa", "Potrzebujesz oprawy twardej lub klejenia"],
+                ["Wydawnictwa", "Potrzebujesz oprawy twardej lub miękkiej"],
               ].map(([title, desc]) => (
                 <div key={title} className="text-center p-4 rounded-xl bg-gray-50 border border-gray-200">
                   <p className="text-sm font-bold text-navy">{title}</p>
                   <p className="text-[11px] text-gray-400 mt-1 leading-snug">{desc}</p>
                 </div>
               ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ── Serie produktów ── */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="mx-auto max-w-5xl px-5 py-8">
-          <Reveal>
-            <div className="bg-navy-light border border-gray-200 rounded-xl p-6">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-3">Dwie serie produktów Akonda</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>
-                  <p className="font-bold text-navy mb-1">Maszyny introligatorskie</p>
-                  <p className="text-xs text-gray-500">Bigówki, oklejarki, foliarki, krajarki, linie broszurujące, systemy oprawy twardej, klejenie kalendarzy</p>
-                </div>
-                <div>
-                  <p className="font-bold text-navy mb-1">Plotery tnące</p>
-                  <p className="text-xs text-gray-500">iEcho PK 0705 i AK4 - również na miejscu do obejrzenia</p>
-                </div>
-              </div>
             </div>
           </Reveal>
         </div>
@@ -188,18 +163,17 @@ export default function Home() {
             <Reveal delay={1}>
               <div className="bg-white border-2 border-accent/30 rounded-xl overflow-hidden shadow-sm h-full">
                 <div className="relative h-56 bg-gray-100 overflow-hidden">
-                  <Image src="/machines/multigraf-cf375.jpg" alt="Multigraf Touchline CF375" fill className="object-contain p-4" />
+                  <Image src="/machines/cpc375-xpro.jpg" alt="Multigraf Touchline CF375 Xpro" fill className="object-contain p-4" />
                   <div className="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">
                     Premiera
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-accent">Bigówko-falcerka</p>
-                  <h3 className="text-lg font-extrabold text-navy mt-1 mb-2">Nowy Multigraf Touchline CF375</h3>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-accent">Multifinisher</p>
+                  <h3 className="text-lg font-extrabold text-navy mt-1 mb-2">Nowy Multigraf Touchline CF375 Xpro</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    Szwajcarski system do bigowania i&nbsp;falcowania z&nbsp;technologią Swing-Bar
-                    i&nbsp;Pro-Knife. Do 6000 arkuszy/h, gramatura do 400&nbsp;g/m².
-                    Porównaj nowy model z&nbsp;poprzednią generacją - oba na miejscu, obok siebie.
+                    Szwajcarski multifinisher: bigowanie, perforacja, falcowanie i&nbsp;numeracja
+                    w&nbsp;jednym urządzeniu. Do 6000 arkuszy/h, gramatura do 400&nbsp;g/m².
                   </p>
                 </div>
               </div>
@@ -218,7 +192,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <p className="text-[10px] font-semibold uppercase tracking-widest text-accent">Klejenie kalendarzy</p>
-                  <h3 className="text-lg font-extrabold text-navy mt-1 mb-2">365bind - Półautomat</h3>
+                  <h3 className="text-lg font-extrabold text-navy mt-1 mb-2">365bind Smart - Półautomat do klejenia kalendarzy</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">
                     Półautomatyczny system do klejenia kalendarzy. Kompaktowy, wydajny
                     i&nbsp;idealny dla drukarni szukających szybkiego wejścia w&nbsp;produkcję kalendarzy.
@@ -247,10 +221,59 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             <Reveal delay={1}><MachineCard src="/machines/hydrocut.jpg" alt="Hydrocut 52" tag="Krajarka" title="Hydrocut 52" desc="Krajarka hydrauliczna do precyzyjnego cięcia stosów papieru. Solidna konstrukcja i intuicyjna obsługa." /></Reveal>
             <Reveal delay={2}><MachineCard src="/machines/foliarka-b3.avif" alt="Foliarka" tag="Foliarka" title="Foliarka półautomatyczna" desc="Foliarka do laminowania i uszlachetniania arkuszy. Idealna do krótkich i średnich nakładów." /></Reveal>
-            <Reveal delay={3}><MachineCard tag="Oklejarka" title="Oklejarka BB3002" desc="Profesjonalna oklejarka do oprawy klejowej - w codziennej pracy u klienta." /></Reveal>
-            <Reveal delay={1}><MachineCard src="/machines/cp-bourg-bme.png" alt="C.P. Bourg BM-E" tag="Broszurowanie" title="C.P. Bourg BM-E" desc="Linia broszurująca do automatycznego składania i zszywania. Działa tu na co dzień." /></Reveal>
-            <Reveal delay={2}><MachineCard tag="Oprawa twarda" title="Bemini CM-01 / CM-02 / JF-01" desc="Kompletny zestaw do oprawy twardej - od oklejania po prasowanie. Trzy maszyny w jednym flow." /></Reveal>
+            <Reveal delay={3}><MachineCard src="/machines/bb3002.webp" alt="Oklejarka BB3002" tag="Oklejarka" title="Oklejarka BB3002" desc="Profesjonalna oklejarka do oprawy klejowej - w codziennej pracy u klienta." /></Reveal>
+            <Reveal delay={1}><MachineCard src="/machines/bourg-bbm.webp" alt="C.P. Bourg BM-E" tag="Broszurowanie" title="C.P. Bourg BM-E" desc="Linia broszurująca do automatycznego składania i zszywania. Działa tu na co dzień." /></Reveal>
+            <Reveal delay={2}><MachineCard src="/machines/bemini-cm01.jpg" alt="Bemini CM-01" tag="Oprawa twarda" title="Bemini CM-01 / CM-02 / JF-01" desc="Kompletny zestaw do oprawy twardej - od oklejania po prasowanie. Trzy maszyny w jednym flow." /></Reveal>
             <Reveal delay={3}><MachineCard src="/machines/multigraf-cf375.jpg" alt="Multigraf 375 CF" tag="Bigówka" title="Multigraf 375 CF" desc="Wielofunkcyjny system do bigowania, perforacji i numeracji arkuszy." /></Reveal>
+          </div>
+
+          {/* ── Plotery tnące ── */}
+          <Reveal>
+            <div className="text-center mt-16 mb-10">
+              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white bg-navy px-3 py-1 rounded-full mb-3">
+                Plotery tnące
+              </span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-navy">
+                iEcho - cięcie i bigowanie
+              </h2>
+              <p className="text-gray-500 text-sm mt-2 max-w-lg mx-auto">
+                Dwie serie ploterów tnących Akonda - od kompaktowego AK4 po flagowy PK 0705+ z&nbsp;automatycznym podajnikiem.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Reveal delay={1}>
+              <div className="bg-white border-2 border-navy/20 rounded-xl overflow-hidden shadow-sm h-full">
+                <div className="relative h-56 bg-gray-100 overflow-hidden">
+                  <Image src="/machines/pk-new.webp" alt="iEcho PK 0705+" fill className="object-contain p-4" />
+                </div>
+                <div className="p-6">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-navy/60">Ploter tnący z podajnikiem</p>
+                  <h3 className="text-lg font-extrabold text-navy mt-1 mb-2">iEcho PK 0705+</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">
+                    Bestsellerowy ploter z&nbsp;automatycznym podajnikiem arkuszy. Produkcja opakowań,
+                    etykiet, wykrojników i&nbsp;prototypów.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={2}>
+              <div className="bg-white border-2 border-navy/20 rounded-xl overflow-hidden shadow-sm h-full">
+                <div className="relative h-56 bg-gray-100 overflow-hidden">
+                  <Image src="/machines/iecho-ak4.webp" alt="iEcho AK4" fill className="object-contain p-4" />
+                </div>
+                <div className="p-6">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-navy/60">Ploter tnący kompaktowy</p>
+                  <h3 className="text-lg font-extrabold text-navy mt-1 mb-2">iEcho AK4</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">
+                    Kompaktowy ploter tnący do cięcia i&nbsp;bigowania. Pierwsze wdrożenie w&nbsp;Polsce -
+                    właśnie tutaj, w&nbsp;Market&nbsp;Print&nbsp;Global.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
           </div>
 
           <Reveal>

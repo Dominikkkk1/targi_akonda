@@ -19,9 +19,9 @@ export async function POST(request: Request) {
     const rawPhone = body.phone;
     const rawMessage = body.message;
 
-    if (!rawName || !rawEmail || !rawCompany) {
+    if (!rawName || !rawEmail || !rawCompany || !rawPhone) {
       return Response.json(
-        { error: "Imię, email i firma są wymagane." },
+        { error: "Imię, email, firma i telefon są wymagane." },
         { status: 400 }
       );
     }
