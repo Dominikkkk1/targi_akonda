@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import RoadshowForm from "../components/RoadshowForm";
 import Reveal from "../components/Reveal";
+import AnimatedCounter from "../components/AnimatedCounter";
+import ScrollProgress from "../components/ScrollProgress";
+import SocialProofBar from "../components/SocialProofBar";
 import { FadeInUp } from "../components/HeroAnimations";
 
 export const metadata: Metadata = {
@@ -34,6 +37,9 @@ export default function CF375XproPage() {
           </a>
         </div>
       </header>
+
+      <ScrollProgress />
+      <SocialProofBar />
 
       {/* ── Hero ── */}
       <section className="relative pt-14">
@@ -129,7 +135,7 @@ export default function CF375XproPage() {
         <div className="mx-auto max-w-5xl px-5">
           <Reveal>
             <div className="text-center mb-12">
-              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white bg-accent px-3 py-1 rounded-full mb-3">
+              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white bg-accent px-3 py-1 rounded-full mb-3 pulse-badge">
                 Premiera w Polsce
               </span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-navy">
@@ -144,7 +150,7 @@ export default function CF375XproPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
             <Reveal>
-              <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+              <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden border border-gray-200 tilt-hover">
                 <Image src="/machines/cpc375-xpro.avif" alt="Multigraf Touchline CF375 Xpro" fill className="object-contain p-8" />
               </div>
             </Reveal>
@@ -189,7 +195,7 @@ export default function CF375XproPage() {
                   ["Wymiary (D x S x W)", "1860 x 600 x 1320 mm"],
                   ["Waga", "196 kg"],
                 ].map(([label, value]) => (
-                  <div key={label} className="flex justify-between border-b border-gray-200 pb-2">
+                  <div key={label} className="flex justify-between border-b border-gray-200 pb-2 spec-row rounded">
                     <span className="text-gray-400 font-medium">{label}</span>
                     <span className="text-navy font-semibold text-right">{value}</span>
                   </div>
@@ -287,19 +293,30 @@ export default function CF375XproPage() {
             </div>
           </Reveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            {[
-              ["15+", "Lat na rynku"],
-              ["3000+", "Instalacji w Polsce"],
-              ["Serwis", "Gwarancja i wsparcie"],
-              ["Leasing", "Finansowanie od 0%"],
-            ].map(([val, label]) => (
-              <Reveal key={label}>
-                <div className="p-5 rounded-xl bg-navy-light">
-                  <p className="text-xl md:text-2xl font-extrabold text-navy">{val}</p>
-                  <p className="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">{label}</p>
-                </div>
-              </Reveal>
-            ))}
+            <Reveal>
+              <div className="p-5 rounded-xl bg-navy-light">
+                <p className="text-xl md:text-2xl font-extrabold text-navy"><AnimatedCounter value={15} suffix="+" /></p>
+                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Lat na rynku</p>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="p-5 rounded-xl bg-navy-light">
+                <p className="text-xl md:text-2xl font-extrabold text-navy"><AnimatedCounter value={3000} suffix="+" /></p>
+                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Instalacji w Polsce</p>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="p-5 rounded-xl bg-navy-light">
+                <p className="text-xl md:text-2xl font-extrabold text-navy">Serwis</p>
+                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Gwarancja i wsparcie</p>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="p-5 rounded-xl bg-navy-light">
+                <p className="text-xl md:text-2xl font-extrabold text-navy">Leasing</p>
+                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Finansowanie od 0%</p>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -344,7 +361,7 @@ export default function CF375XproPage() {
 
       {/* ── Sticky CTA mobile ── */}
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 px-5 py-3">
-        <a href="#formularz" className="block w-full h-11 bg-navy text-white font-bold text-sm rounded-md flex items-center justify-center hover:bg-navy-dark transition-colors">
+        <a href="#formularz" className="block w-full h-11 cta-shimmer text-white font-bold text-sm rounded-md flex items-center justify-center">
           Umów prezentację u siebie&nbsp;→
         </a>
       </div>
