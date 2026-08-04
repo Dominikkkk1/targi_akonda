@@ -133,12 +133,13 @@ export default function CF375XproPage() {
                 Multigraf Touchline CF375 Xpro
               </h2>
               <p className="text-gray-500 text-sm mt-2 max-w-lg mx-auto">
-                Szwajcarski multifinisher - bigowanie, perforacja, falcowanie i&nbsp;numeracja w&nbsp;jednym urządzeniu.
+                Szwajcarska bigówko-falcerka - 6 typów falców, ekran dotykowy,
+                podajnik próżniowy i&nbsp;detekcja podwójnych arkuszy w&nbsp;jednym urządzeniu.
               </p>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
             <Reveal>
               <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
                 <Image src="/machines/cpc375-xpro.avif" alt="Multigraf Touchline CF375 Xpro" fill className="object-contain p-8" />
@@ -148,10 +149,11 @@ export default function CF375XproPage() {
             <Reveal delay={1}>
               <div className="space-y-5">
                 {[
-                  ["Swing-Bar", "Unikalna technologia zapobiegająca pękaniu włókien papieru przy bigowaniu. 3 automatyczne głębokości, do 20 bigów na arkusz."],
-                  ["Pro-Knife", "Opatentowana technologia gwarantująca idealny falc bez śladów, nawet na materiałach do 400 g/m²."],
-                  ["Ekran dotykowy", "Cyfrowa konfiguracja bez narzędzi - pozycje bigów, typy falców, formaty papieru. Pamięć zleceń."],
-                  ["Wydajność", "Do 6000 arkuszy/h. Format do 375 x 660 mm (rozszerzalny do 1050 mm). Gramatura 80-400 g/m²."],
+                  ["Swing-Bar™ - system bigowania", "Unikalna technologia zapobiegająca pękaniu włókien papieru. 3 automatyczne głębokości, do 20 bigów na arkusz, min. odstęp 30 mm."],
+                  ["Pro-Knife™ - system falcowania", "Opatentowana technologia gwarantująca idealny falc bez śladów. 6 standardowych typów falców, do 2 falców na arkusz."],
+                  ["Ekran dotykowy", "Cyfrowa konfiguracja bez narzędzi - pozycje bigów, typy falców, formaty, liczba arkuszy w partii. Pamięć zleceń."],
+                  ["Detekcja podwójnych arkuszy", "Ultradźwiękowe czujniki wykrywają podwójne podania, zapewniając niezawodność i ochronę dokumentów."],
+                  ["Podajnik próżniowy", "Stół podawczy 180 mm z systemem ssącym - minimalne przestoje przy przeładunku, ciągła praca."],
                 ].map(([title, desc]) => (
                   <div key={title} className="flex gap-3">
                     <div className="mt-1 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
@@ -164,6 +166,83 @@ export default function CF375XproPage() {
               </div>
             </Reveal>
           </div>
+
+          {/* ── Specyfikacja techniczna ── */}
+          <Reveal>
+            <div className="bg-navy-light border border-gray-200 rounded-xl p-6 mb-16">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-navy mb-4">Specyfikacja techniczna</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3 text-sm">
+                {[
+                  ["Format min.", "105 x 148 mm"],
+                  ["Format max.", "375 x 660 mm (do 1050 mm z rozszerzeniem)"],
+                  ["Gramatura", "80-400 g/m² (max. 0,4 mm)"],
+                  ["Wydajność", "Do 6000 arkuszy/h"],
+                  ["Typy falców", "6 standardowych"],
+                  ["Bigi na arkusz", "Do 20"],
+                  ["Falce na arkusz", "Do 2"],
+                  ["Min. długość falcu", "30 mm"],
+                  ["Max. długość falcu", "500 mm"],
+                  ["Pojemność podajnika", "180 mm"],
+                  ["Wymiary (D x S x W)", "1860 x 600 x 1320 mm"],
+                  ["Waga", "196 kg"],
+                ].map(([label, value]) => (
+                  <div key={label} className="flex justify-between border-b border-gray-200 pb-2">
+                    <span className="text-gray-400 font-medium">{label}</span>
+                    <span className="text-navy font-semibold text-right">{value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+
+          {/* ── Zastosowania ── */}
+          <Reveal>
+            <div className="text-center mb-8">
+              <h3 className="text-lg font-extrabold text-navy">Typowe zastosowania</h3>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 mb-16">
+              {[
+                "Kartki okolicznościowe",
+                "Ulotki składane",
+                "Menu restauracyjne",
+                "Programy eventowe",
+                "Broszury",
+                "Mailingi",
+              ].map((app) => (
+                <div key={app} className="text-center p-3 rounded-lg bg-gray-50 border border-gray-200">
+                  <p className="text-xs font-semibold text-navy">{app}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          {/* ── Wideo ── */}
+          <Reveal>
+            <div className="text-center mb-8">
+              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-navy bg-navy-light px-3 py-1 rounded-full mb-3">
+                Zobacz w akcji
+              </span>
+              <h3 className="text-xl font-extrabold text-navy">
+                CF375 Xpro - prezentacja
+              </h3>
+            </div>
+          </Reveal>
+          <Reveal delay={1}>
+            <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm aspect-video max-w-3xl mx-auto">
+              <iframe
+                title="Multigraf Touchline CF375 Xpro - prezentacja"
+                src="https://www.youtube.com/embed/zdvm-4wXUgE?si=lU3qjAVaa7r7FiuW"
+                width="100%"
+                height="100%"
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 
