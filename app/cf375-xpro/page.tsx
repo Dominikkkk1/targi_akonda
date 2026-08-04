@@ -42,9 +42,12 @@ export default function CF375XproPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
             <div className="lg:col-span-3">
               <FadeInUp delay={0}>
-                <span className="inline-block text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1.5 rounded-full mb-5 leading-relaxed">
-                  Oficjalny partner Multigraf w Polsce
-                </span>
+                <div className="flex flex-wrap items-center gap-4 mb-5">
+                  <span className="inline-block text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1.5 rounded-full leading-relaxed">
+                    Oficjalny partner Multigraf w Polsce
+                  </span>
+                  <Image src="/multigraf-logo.svg" alt="Multigraf" width={198} height={100} className="h-8 w-auto brightness-0 invert opacity-60" />
+                </div>
               </FadeInUp>
 
               <FadeInUp delay={0.12}>
