@@ -49,14 +49,17 @@ export default function CF375XproPage() {
             <div className="lg:col-span-3">
               <FadeInUp delay={0}>
                 <div className="flex flex-wrap items-center gap-4 mb-5">
-                  <span className="inline-block text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest text-white/80 bg-white/15 backdrop-blur-sm px-3 py-1.5 rounded-full leading-relaxed">
+                  <span className="inline-block text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest text-white bg-accent px-3 py-1.5 rounded-full leading-relaxed pulse-badge">
                     Oficjalny partner Multigraf w Polsce
                   </span>
-                  <Image src="/multigraf-logo.svg" alt="Multigraf" width={198} height={100} className="h-8 w-auto brightness-0 invert opacity-60" />
                 </div>
               </FadeInUp>
 
-              <FadeInUp delay={0.12}>
+              <FadeInUp delay={0.08}>
+                <Image src="/multigraf-logo.svg" alt="Multigraf" width={198} height={100} className="h-10 w-auto brightness-0 invert mb-5" />
+              </FadeInUp>
+
+              <FadeInUp delay={0.16}>
                 <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
                   Premiera<br />
                   <span className="text-white/60">Multigraf Touchline<br className="sm:hidden" /> CF375 Xpro</span>
@@ -64,10 +67,14 @@ export default function CF375XproPage() {
               </FadeInUp>
 
               <FadeInUp delay={0.24}>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-3">
+                  Zostaliśmy oficjalnym partnerem Multigraf w&nbsp;Polsce i&nbsp;jako jedyni
+                  oferujemy pełne wsparcie serwisowe, szkolenia oraz leasing na maszyny Multigraf.
+                </p>
                 <p className="text-white/70 text-base md:text-lg leading-relaxed mb-4">
-                  Zostaliśmy oficjalnym partnerem Multigraf w&nbsp;Polsce.
-                  Z&nbsp;tej okazji ruszamy w&nbsp;trasę z&nbsp;nowym multifinisherem CF375&nbsp;Xpro -
-                  przyjedziemy do Twojej drukarni i&nbsp;pokażemy maszynę w&nbsp;akcji.
+                  Z&nbsp;tej okazji ruszamy w&nbsp;trasę z&nbsp;nowym CF375&nbsp;Xpro - przyjedziemy
+                  do Twojej drukarni z&nbsp;maszyną, pokażemy ją na Twoich materiałach i&nbsp;odpowiemy
+                  na wszystkie pytania. Bezpłatnie, bez zobowiązań.
                 </p>
               </FadeInUp>
 
