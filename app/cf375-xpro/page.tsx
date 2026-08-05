@@ -43,7 +43,8 @@ export default function CF375XproPage() {
 
       {/* ── Hero ── */}
       <section className="relative pt-14">
-        <div className="absolute inset-0 bg-navy" />
+        <Image src="/hero-cf375.jpg" alt="" fill className="object-cover" priority />
+        <div className="absolute inset-0 bg-navy/85" />
         <div className="relative mx-auto max-w-5xl px-5 py-16 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
             <div className="lg:col-span-3">
@@ -55,11 +56,7 @@ export default function CF375XproPage() {
                 </div>
               </FadeInUp>
 
-              <FadeInUp delay={0.08}>
-                <Image src="/multigraf-logo.svg" alt="Multigraf" width={198} height={100} className="h-10 w-auto brightness-0 invert mb-5" />
-              </FadeInUp>
-
-              <FadeInUp delay={0.16}>
+              <FadeInUp delay={0.12}>
                 <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight mb-5">
                   Premiera<br />
                   <span className="text-white/60">Multigraf Touchline<br className="sm:hidden" /> CF375 Xpro</span>
