@@ -111,41 +111,6 @@ export default function CF375XproPage() {
         </div>
       </section>
 
-      {/* ── Jak to działa ── */}
-      <section className="relative overflow-hidden">
-        <Image src="/roadshow-van.jpg" alt="Roadshow Akonda - dostarczymy maszynę do Ciebie" fill className="object-cover" />
-        <div className="absolute inset-0 bg-navy-dark/80" />
-        <div className="relative mx-auto max-w-5xl px-5 py-14 md:py-20">
-          <Reveal>
-            <div className="text-center mb-10">
-              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white bg-white/15 px-3 py-1 rounded-full mb-3">
-                Roadshow
-              </span>
-              <h2 className="text-xl md:text-2xl font-extrabold text-white">
-                Jak wygląda prezentacja?
-              </h2>
-            </div>
-          </Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            {[
-              ["1", "Zapisz się", "Wypełnij formularz - to zajmie minutę"],
-              ["2", "Umówimy termin", "Nasz konsultant zadzwoni i ustali dogodną datę"],
-              ["3", "Przyjedziemy z maszyną", "Dostarczymy CF375 Xpro do Twojej firmy i pokażemy ją na Twoich materiałach"],
-            ].map(([num, title, desc]) => (
-              <Reveal key={num}>
-                <div className="flex flex-col items-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center mb-4">
-                    <span className="text-lg font-extrabold text-white">{num}</span>
-                  </div>
-                  <h3 className="text-sm font-bold text-white mb-2">{title}</h3>
-                  <p className="text-xs text-white/70 leading-relaxed">{desc}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Maszyna ── */}
       <section id="maszyna" className="py-16 md:py-24 bg-white">
         <div className="mx-auto max-w-5xl px-5">
@@ -241,7 +206,48 @@ export default function CF375XproPage() {
             </div>
           </Reveal>
 
-          {/* ── Wideo ── */}
+        </div>
+      </section>
+
+      {/* ── Jak to działa ── */}
+      <section className="relative overflow-hidden">
+        <Image src="/roadshow-van.jpg" alt="Roadshow Akonda - dostarczymy maszynę do Ciebie" fill className="object-cover" />
+        <div className="absolute inset-0 bg-navy-dark/80" />
+        <div className="relative mx-auto max-w-5xl px-5 py-14 md:py-20">
+          <Reveal>
+            <div className="text-center mb-10">
+              <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-white bg-white/15 px-3 py-1 rounded-full mb-3">
+                Roadshow
+              </span>
+              <h2 className="text-xl md:text-2xl font-extrabold text-white">
+                Jak wygląda prezentacja?
+              </h2>
+            </div>
+          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            {[
+              ["1", "Zapisz się", "Wypełnij formularz - to zajmie minutę"],
+              ["2", "Umówimy termin", "Nasz konsultant zadzwoni i ustali dogodną datę"],
+              ["3", "Przyjedziemy z maszyną", "Dostarczymy CF375 Xpro do Twojej firmy i pokażemy ją na Twoich materiałach"],
+            ].map(([num, title, desc]) => (
+              <Reveal key={num}>
+                <div className="flex flex-col items-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center mb-4">
+                    <span className="text-lg font-extrabold text-white">{num}</span>
+                  </div>
+                  <h3 className="text-sm font-bold text-white mb-2">{title}</h3>
+                  <p className="text-xs text-white/70 leading-relaxed">{desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Wideo ── */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="mx-auto max-w-5xl px-5">
+          {/* ── Wideo embed ── */}
           <Reveal>
             <div className="text-center mb-8">
               <span className="inline-block text-[11px] font-semibold uppercase tracking-widest text-navy bg-navy-light px-3 py-1 rounded-full mb-3">
