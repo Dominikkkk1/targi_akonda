@@ -64,11 +64,11 @@ export default function CF375XproPage() {
               </FadeInUp>
 
               <FadeInUp delay={0.24}>
-                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-3">
+                <p className="text-white/90 text-base md:text-lg leading-relaxed mb-3">
                   Zostaliśmy oficjalnym partnerem Multigraf w&nbsp;Polsce i&nbsp;jako jedyni
                   oferujemy pełne wsparcie serwisowe, szkolenia oraz leasing na maszyny Multigraf.
                 </p>
-                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-4">
+                <p className="text-white/90 text-base md:text-lg leading-relaxed mb-4">
                   Z&nbsp;tej okazji ruszamy w&nbsp;trasę z&nbsp;nowym CF375&nbsp;Xpro - przyjedziemy
                   do Twojej drukarni z&nbsp;maszyną, pokażemy ją na Twoich materiałach i&nbsp;odpowiemy
                   na wszystkie pytania. Bezpłatnie, bez zobowiązań.
@@ -77,15 +77,15 @@ export default function CF375XproPage() {
 
               <FadeInUp delay={0.3}>
                 <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
-                  <div className="flex items-center gap-2 text-white/70 text-sm">
+                  <div className="flex items-center gap-2 text-white/90 text-sm">
                     <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                     Bezpłatna prezentacja u Ciebie
                   </div>
-                  <div className="flex items-center gap-2 text-white/70 text-sm">
+                  <div className="flex items-center gap-2 text-white/90 text-sm">
                     <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                     Testy na Twoich materiałach
                   </div>
-                  <div className="flex items-center gap-2 text-white/70 text-sm">
+                  <div className="flex items-center gap-2 text-white/90 text-sm">
                     <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                     Bez zobowiązań
                   </div>
