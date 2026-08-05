@@ -296,17 +296,11 @@ export default function CF375XproPage() {
               </h2>
             </div>
           </Reveal>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <Reveal>
               <div className="p-5 rounded-xl bg-navy-light">
                 <p className="text-xl md:text-2xl font-extrabold text-navy"><AnimatedCounter value={15} suffix="+" /></p>
                 <p className="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Lat na rynku</p>
-              </div>
-            </Reveal>
-            <Reveal>
-              <div className="p-5 rounded-xl bg-navy-light">
-                <p className="text-xl md:text-2xl font-extrabold text-navy"><AnimatedCounter value={3000} suffix="+" /></p>
-                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Instalacji w Polsce</p>
               </div>
             </Reveal>
             <Reveal>
