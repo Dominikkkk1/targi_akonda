@@ -65,7 +65,7 @@ export default function CF375XproPage() {
 
               <FadeInUp delay={0.24}>
                 <p className="text-white/90 text-base md:text-lg leading-relaxed mb-3">
-                  Zostaliśmy oficjalnym partnerem Multigraf w&nbsp;Polsce i&nbsp;jako jedyni
+                  Zostaliśmy oficjalnym partnerem Multigraf w&nbsp;Polsce -
                   oferujemy pełne wsparcie serwisowe, szkolenia oraz leasing na maszyny Multigraf.
                 </p>
                 <p className="text-white/90 text-base md:text-lg leading-relaxed mb-4">
