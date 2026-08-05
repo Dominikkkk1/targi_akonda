@@ -197,7 +197,7 @@ export default function CF375XproPage() {
                 "Menu restauracyjne",
                 "Programy eventowe",
                 "Broszury",
-                "Mailingi",
+                "Foldery reklamowe",
               ].map((app) => (
                 <div key={app} className="text-center p-3 rounded-lg bg-gray-50 border border-gray-200">
                   <p className="text-xs font-semibold text-navy">{app}</p>
