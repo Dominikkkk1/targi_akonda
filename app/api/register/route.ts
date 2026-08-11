@@ -1,4 +1,45 @@
 import { Resend } from "resend";
+import crypto from "crypto";
+
+async function sendCapiEvent(email: string, name: string, phone: string) {
+  const token = process.env.META_CAPI_TOKEN;
+  const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+  if (!token || !pixelId) return;
+
+  const hashSha256 = (v: string) =>
+    crypto.createHash("sha256").update(v.trim().toLowerCase()).digest("hex");
+
+  const nameParts = name.trim().split(/\s+/);
+
+  const body = {
+    data: [
+      {
+        event_name: "Lead",
+        event_time: Math.floor(Date.now() / 1000),
+        action_source: "website",
+        user_data: {
+          em: [hashSha256(email)],
+          fn: [hashSha256(nameParts[0] || "")],
+          ...(nameParts.length > 1 && { ln: [hashSha256(nameParts[nameParts.length - 1])] }),
+          ...(phone && { ph: [hashSha256(phone.replace(/\D/g, ""))] }),
+        },
+      },
+    ],
+  };
+
+  try {
+    await fetch(
+      `https://graph.facebook.com/v21.0/${pixelId}/events?access_token=${token}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      }
+    );
+  } catch {
+    console.error("CAPI event failed");
+  }
+}
 
 function escapeHtml(str: string): string {
   return str
@@ -118,6 +159,9 @@ export async function POST(request: Request) {
         </div>
       `,
     });
+
+    // Meta Conversions API - server-side Lead (backup dla ad blockerów)
+    sendCapiEvent(email, name, phone);
 
     return Response.json({ success: true });
   } catch (error) {
