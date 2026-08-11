@@ -161,7 +161,7 @@ export async function POST(request: Request) {
     });
 
     // Meta Conversions API - server-side Lead (backup dla ad blockerów)
-    sendCapiEvent(email, name, phone);
+    sendCapiEvent(rawEmail, rawName, rawPhone);
 
     return Response.json({ success: true });
   } catch (error) {
